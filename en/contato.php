@@ -447,7 +447,7 @@ if(isset($_POST["submit"])){
                                 <br>
 
 
-                                <a href="">
+                                <a href="../es/contato.php">
 
                                         <img src="../img/icon/es.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
