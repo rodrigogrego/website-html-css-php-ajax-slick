@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">      
+    <link rel="icon" href="img/icon/icon.png">
+      <title>Compliance</title>
+</head>
+<body>
+        <!-- NAVBAR AREA -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="index.html">
+                        <img src="img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                                <li class="nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" onclick="funcaoClick()">Quem Somos</a>
+                                        <div class="sub-item" id="drop">
+                                                <a class="sub-itens" href="history.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Nossa
+                                                        História</a>
+                                                <a class="sub-itens" href="corporativo.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Corporativo
+                                                </a>
+                                                <a class="sub-itens" href="politica.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Política
+                                                        de Gestão</a>
+                                                <a class="sub-itens" href="compliance.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Compliance,
+                                                        Ética e Transparência</a> 
+                                                        <a class="sub-itens" href="seguranca.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Segurança
+                                                </a> 
+                                                </div>
+
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="about.html"
+                                                id="navbarDropdownMenuLink">Serviços </a>
+                                        <div class="sub-item">
+                                                <a class="sub-itens" href="eletrica.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Elétrica
+                                                        Industrial</a>
+                                                <a class="sub-itens" href="mecanica.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Mecânica</a>
+                                                <a class="sub-itens" href="instrumentacao.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Instrumentação</a>
+                                                <a class="sub-itens" href="civil.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Civil</a>
+                                                <a class="sub-itens" href="caldeiraria.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Caldeiraria</a>
+                                                <a class="sub-itens" href="valvulas.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Válvulas</a>
+                                                <a class="sub-itens" href="facilites.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilites</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" onclick="funcaoClick2()">Portfólio</a>
+                                        <div class="sub-item" id="drop2">
+                                                <a class="sub-itens" href="cenpes.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Cenpes</a>
+                                                <a class="sub-itens" href="sergipe.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Sergipe</a>
+                                                <a class="sub-itens" href="roque.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">São
+                                                        Roque</a>
+                                                <a class="sub-itens" href="knauf.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Knauf</a>
+                                                <a class="sub-itens" href="betumat.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
+                                                <a class="sub-itens" href="jpa.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Engenharia</a>
+                                        </div>
+
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="afiliados.html">Parceiros</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="contato.php">Contato</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="trabalhe.html">Trabalhe Conosco</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="orcamento.php">Orçamento</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="ouvidoria.html">Ouvidoria</a>
+                                </li>
+                                <div class="icons-nav">
+
+                                        <li class="nav-item">
+                                                <a class="nav-link">
+                                                        <img src="img/icon/in2.png" height="25px" width="25px"id='in1'>
+                                                </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="login.php">
+                                                        <img src="img/icon/login2.png" height="25px" width="25px"id='login1'>
+                                                </a>
+                                        </li>
+
+                                </div>
+                        </ul>
+                </div>
+    </nav>
+        <!-- END NAVBAR AREA -->
+        <div class="title-page">
+                <picture class="image-title">
+                         <img src="img/ethic.jpg" class="img-fluid-serv" alt="...">
+                </picture>
+                        <div class="container">
+                                <h1 class="page-title">COMPLIANCE, ÉTICA E TRANSPARÊNCIA</h1>
+
+                        </div>
+        </div>
+        
+        <section id="nav2">
+
+        <div class="row-nav2 justify-content">
+            <div class="col-sm-auto">
+                    <a href="corporativo.html" class="title-icon">Corporativo</a>
+                
+            </div>
+
+
+
+                <div class="col-sm-auto">
+                    <a href="compliance.html" class="title-only">Compliance, Ética e Transparência</a>
+                    
+                </div>
+
+                <div class="col-sm-auto">
+                    <a href="politica.html" class="title-icon">Política de Gestão</a>
+                    
+                </div>
+                
+                <div class="col-sm-auto">
+                        <a href="seguranca.html" class="title-icon">Segurança</a>
+                    
+                </div>
+                
+            </section>
+
+        <div class="text-intro">
+                
+                <div class="row-intro mb-2">
+                        <div class="col">         
+                        </div> 
+                        <div class="col-8">         
+                               
+                                <strong>
+
+                                        <p>A LM Engenharia acredita que a boa reputação e a credibilidade são construídas pelas atitudes diárias das pessoas envolvidas em seus negócios. 
+                                                Nosso maior compromisso é atuar sempre em consonância com a legislação vigente, orientado pela ética, valores morais, integridade e transparência, não só na condução dos negócios, mas em todas as atitudes das pessoas.</p>
+                                               
+                                                <p>Por isso, a empresa mantém um alto padrão de ética, conduta e compliance, regimento interno, exigindo de todos o cumprimento integral das leis em todos os locais e mercados em que atuam, bem como das normas e políticas internas da empresa. </p>
+                                              <p>  Manter relações íntegras e transparentes com colaboradores, clientes, parceiros, governos e demais públicos.
+                                                Novos processos foram criados e implementados e aqueles já existentes foram revisados. Desta forma, nasce a nossa Política de Integridade, Código de Conduta, Política do SGI, dentre outros.
+                                        </p>
+                                </strong>
+                        </div> 
+                        <div class="col">    
+                        </div> 
+
+                </div>        
+                        <div class="button-compliance">
+                                <a href="">
+                                        Saiba Mais
+                                </a>
+                        </div>    
+        </div>  
+
+        
+        <footer class="pt-4 text-center">
+                <div class="row">
+
+                        <div class="col-md-3 mt-md-3 mt-3">
+                                <h5 class="text-uppercase">LM ENGENHARIA</h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                        <li>
+                                                <a href="history.html" class="a-footer">Nossa História</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="corporativo.html" class="a-footer">Corporativo</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="compliance.html" class="a-footer">Compliance, Ética e
+                                                        Transparência</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="politica.html" class="a-footer">Política de Gestão</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <a href="seguranca.html" class="a-footer">Segurança</a>
+                                        </li>
+                                </ul>
+                                <br>
+                        </div>
+                        <div class="col-md-2 mt-md-3">
+
+                                <h5 class="text-uppercase"><a href="about.html" class="a-footer">Serviços</a></h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                        <li>
+                                                <a href="orcamento.php" class="a-footer">Orçamento</a>
+                                        </li>
+                                </ul>
+                                <br>
+
+
+                                <a href="en/compliance.html">
+
+                                        <img src="img/icon/uk.png"
+                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                                </a>
+                        </div>
+
+                        <div class="col-md-3 mt-md-3">
+                                <h5><a class="a-footer" href="contato.php">Contato</a></h5>
+                                <br>
+                                <h5><a class="a-footer" href="trabalhe.html">Trabalhe Conosco</a></h5>
+                                <br>
+                                <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
+                                <br>
+                        </div>
+                        <div class="col-lg mt-md-3 ml-3">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
+                                                4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
+                                        width="100%" height="200px" frameborder="0" style="border:0;"
+                                        allowfullscreen=""></iframe>
+
+
+                                <p class="text-justify">Empresarial 2000 - R. das Ubaranas, 347 - Sala 501 - Amaralina,
+                                        Salvador - BA, 41900-390
+
+                                </p>
+                                <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
+                        </div>
+                </div>
+
+                <br>
+        </footer>
+        <div class="footer-copyright">
+                <p class="text-copyright " style="  color: #222;">
+                        © 2020 Copyright - Praxis Empresa Júnior
+
+                </p>
+                <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
+
+                        <img src="img/icon/praxis.png" style="position: relative;max-width: 25px;">
+                </a>
+        </div>
+        
+        <!-- BOOTSTRAP JS FILE -->
+        <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
+        <script>
+                var mq = window.matchMedia('(max-width: 780px)');
+                var logo = document.getElementById('img1');
+                var icon1 = document.getElementById('login1');
+                var icon2 = document.getElementById('in1');
+
+                if (mq.matches) {
+                        $(logo).attr('src', 'img/icon/marca2.png');
+                        $('.navbar-expand-lg').css("background-color", "#ffff");
+                        $(icon1).attr('src', 'img/icon/login.png');
+                        $(icon2).attr('src', 'img/icon/in.png');
+                }
+                else {
+                        $(logo).attr('src', 'img/icon/marca.png');
+                        $('.navbar-expand-lg').css("background-color", "transparent");
+                        $(icon1).attr('src', 'img/icon/login2.png');
+                        $(icon2).attr('src', 'img/icon/in2.png');
+                }
+
+        </script>
+
+        <script>
+                var mq = window.matchMedia('(max-width: 780px)');
+                $(window).scroll(function () {
+
+                        if (mq.matches) {
+                                $('.navbar-expand-lg').css("background-color", "#ffff");
+                        }
+
+                        else if ($(this).scrollTop() > 1) {
+                                $('.navbar-expand-lg').css("background-color", "#ffff");
+
+
+                        } else {
+                                $('.navbar-expand-lg').css("background-color", "transparent");
+
+
+                        }
+                });
+        </script>
+        <!-- SCRIPT JQUERY PARA TROCAR DE IMAGEM  -->
+        <script>
+                var mq = window.matchMedia('(max-width: 780px)');
+                var troca = document.getElementById('img1');
+                $(window).scroll(function () {
+
+                        if (mq.matches) {
+                                $(troca).attr('src', 'img/icon/marca2.png')
+                        }
+
+                        else if ($(document).scrollTop() > 1) {
+                                $(troca).attr('src', 'img/icon/marca2.png');
+                        } else {
+                                $(troca).attr('src', 'img/icon/marca.png');
+                        }
+
+                });
+        </script>
+
+        <script>
+                var mq = window.matchMedia('(max-width: 780px)');
+                var troca3 = document.getElementById('login1');
+                $(window).scroll(function () {
+                        if (mq.matches) {
+                                $(troca3).attr('src', 'img/icon/login.png');
+                        }
+                        else if ($(document).scrollTop() > 1) {
+                                $(troca3).attr('src', 'img/icon/login.png');
+                        } else {
+                                $(troca3).attr('src', 'img/icon/login2.png');
+                        }
+                });
+        </script>
+
+        <script>
+                var mq = window.matchMedia('(max-width: 780px)');
+                var troca4 = document.getElementById('in1');
+                $(window).scroll(function () {
+
+                        if (mq.matches) {
+                                $(troca4).attr('src', 'img/icon/in.png');
+                        }
+
+                        else if ($(document).scrollTop() > 1) {
+                                $(troca4).attr('src', 'img/icon/in.png');
+                        } else {
+                                $(troca4).attr('src', 'img/icon/in2.png');
+                        }
+                });
+        </script>
+
+        <script>
+
+
+                $(window).scroll(function () {
+
+                        if ($(this).scrollTop() > 1) {
+                                $('.nav-item .nav-link').css("color", "#1e227b");
+
+                        } else {
+                                $('.nav-item .nav-link').css("color", "#ffffff");
+
+                        }
+                });
+        </script>
+
+        <script>
+
+        function funcaoClick() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var x = document.getElementById("drop");
+          if(mq.matches && x.className.indexOf("show") == -1){
+ 
+                          x.className += "show";
+                }
+           else {
+            x.className = x.className.replace("show", "");
+       
+          }
+        }
+        </script>
+
+        <script>
+        function funcaoClick2() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var y = document.getElementById("drop2")
+          if(mq.matches && y.className.indexOf("show2") == -1){
+                 
+                y.className += "show2";
+                }
+           else {
+            y.className = y.className.replace("show2", "");
+          }
+        }
+        </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        
+</body>
+</html>

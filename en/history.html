@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="stylesheet" href="../css/style_history.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="../css/style_history.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css"> 
+    <link rel="icon" href="../img/icon/icon.png"> 
+    <title>Our Story</title>
+
+<script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- NAVBAR AREA -->
+
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html">
+                <img src="../img/icon/marca2.png" height="85px" width="185px" id="img1" class="img-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav">
+                        <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" onclick="funcaoClick()">About Us</a>
+                                <div class="sub-item" id="drop">
+                                        <a class="sub-itens" href="history.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                Story Our</a>
+                                        <a class="sub-itens" href="corporativo.html"
+                                                style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                Corporate
+                                        </a>
+                                        <a class="sub-itens" href="politica.html"
+                                                style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                Management Policy</a>
+                                        <a class="sub-itens" href="compliance.html"
+                                                style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Compliance,
+                                                        Ethics and Transparency</a> 
+                                                <a class="sub-itens" href="seguranca.html"
+                                                style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                Security
+                                        </a> 
+                                        </div>
+        
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="about.html"
+                                        id="navbarDropdownMenuLink">Services </a>
+                                <div class="sub-item">
+                                        <a class="sub-itens" href="eletrica.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;"> Industrial Electrical</a>
+                                        <a class="sub-itens" href="mecanica.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Mechanics</a>
+                                        <a class="sub-itens" href="instrumentacao.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Instrumentation</a>
+                                        <a class="sub-itens" href="civil.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Civil Engineering</a>
+                                        <a class="sub-itens" href="caldeiraria.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Boilermaking</a>
+                                        <a class="sub-itens" href="valvulas.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Valves</a>
+                                        <a class="sub-itens" href="facilites.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilities</a>
+                                </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" onclick="funcaoClick2()" >Portfolio</a>
+                                <div class="sub-item" id="drop2">
+                                        <a class="sub-itens" href="cenpes.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Cenpes</a>
+                                        <a class="sub-itens" href="sergipe.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Sergipe</a>
+                                        <a class="sub-itens" href="roque.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">São
+                                                Roque</a>
+                                        <a class="sub-itens" href="knauf.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Knauf</a>
+                                        <a class="sub-itens" href="betumat.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
+                                        <a class="sub-itens" href="jpa.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Engineering</a>
+                                </div>
+        
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="afiliados.html">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="contato.php">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="trabalhe.html">Work with us</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="orcamento.php">Budget</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                        </li>
+                        <div class="icons-nav">
+        
+                                <li class="nav-item">
+                                        <a class="nav-link">
+                                                <img src="../img/icon/in.png" height="25px" width="25px"id='in1'>
+                                        </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                        <a class="nav-link" href="login.php">
+                                                <img src="../img/icon/login.png" height="25px" width="25px"id='login1'>
+                                        </a>
+                                </li>
+        
+                        </div>
+                </ul>
+        </div>
+</nav>
+  
+    <!-- END NAVBAR AREA -->
+    
+    <div class="container-history">
+      <div class="title">
+
+        <h1>Our Story</h1>
+      </div>
+      <div class="timeline">
+        <div class="timeline-nav">
+          <div class="timeline-nav__item">2013</div>
+          <div class="timeline-nav__item">1988</div>
+          <div class="timeline-nav__item">1998</div>
+        <div class="timeline-nav__item">2006</div>
+        <div class="timeline-nav__item">2008</div>
+        <div class="timeline-nav__item">2010</div>
+        <div class="timeline-nav__item">2012</div>
+        <div class="timeline-nav__item">2013</div>
+        <div class="timeline-nav__item">2015</div>
+        <div class="timeline-nav__item">2016</div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-slider">
+          <div class="timeline-slide" style="background-image: url(../img/img1.jpg)"  data-year="2013"> <span class="timeline-year">2013</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">LM ENGENHARIA</h4>
+          <p class="timeline-text pt-4"> LM Engenharia is a Bahian company, headquartered in Salvador, we operate throughout the national territory since January 12, 2013. Our basic principle is the commitment to Quality, Safety, Ethics, Respect for the Environment and Social Responsibility.</p> 
+          <p class="timeline-text pt-4">  Always investing in technology for better performance in the execution of services, training of its employees, keeping updated in the development of their functions, aiming at a growing increase in their results, aiming and always being prepared for new challenges.</p>
+          </div>
+          </div>
+          <div class="timeline-slide" data-year="1988"> <span class="timeline-year">1988</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our first project</h4>
+          <p class="timeline-text pt-4 ">First project for the leading film actress Jamuna Barua, wife of Pramathesh Barua the legendary actor, director, and screenwriter</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="1998"> <span class="timeline-year">1998</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2006"> <span class="timeline-year">2006</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2008"> <span class="timeline-year">2008</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2010"> <span class="timeline-year">2010</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide" data-year="2012"> <span class="timeline-year">2012</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2013"> <span class="timeline-year">2013</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2015"> <span class="timeline-year">2015</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          <div class="timeline-slide"  data-year="2016"> <span class="timeline-year">2016</span>
+          <div class="timeline-slide__content">
+          <h4 class="timeline-title">Our nice super title</h4>
+          <p class="timeline-text pt-4">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+        <a href="">
+            
+                <img src="../img/icon/es.png"
+                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+        </a>
+
+          <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js'></script>
+          
+          <script id="rendered-js">
+          $(function () {
+            $('.timeline-nav').slick({
+              slidesToShow: 12,
+              slidesToScroll: 1,
+              asNavFor: '.timeline-slider',
+              centerMode: false,
+              focusOnSelect: true,
+              mobileFirst: true,
+              arrows: false,
+              infinite: false,
+              responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 8 } },
+          
+          
+              {
+                breakpoint: 0,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2 } }] });
+          
+          
+          
+          
+          
+            $('.timeline-slider').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              asNavFor: '.timeline-nav',
+              centerMode: true,
+              cssEase: 'ease',
+              edgeFriction: 0.5,
+              mobileFirst: true,
+              speed: 500,
+              responsive: [
+              {
+                breakpoint: 0,
+                settings: {
+                  centerMode: false } },
+          
+          
+              {
+                breakpoint: 768,
+                settings: {
+                  centerMode: true } }] });
+          
+          
+          
+          
+          
+          });
+          //# sourceURL=pen.js
+              </script>
+
+        <script>
+
+        function funcaoClick() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var x = document.getElementById("drop");
+          if(mq.matches && x.className.indexOf("show") == -1){
+ 
+                          x.className += "show";
+                }
+           else {
+            x.className = x.className.replace("show", "");
+       
+          }
+        }
+        </script>
+
+        <script>
+        function funcaoClick2() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var y = document.getElementById("drop2")
+          if(mq.matches && y.className.indexOf("show2") == -1){
+                 
+                y.className += "show2";
+                }
+           else {
+            y.className = y.className.replace("show2", "");
+          }
+        }
+        </script>
+
+
+            <script src="../css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+            <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js'></script>
+
+</body>
+</html>

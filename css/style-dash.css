@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Maven+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Maven Pro', sans-serif; 
+}
+html, body{
+    height: 100%;
+}
+.text-center{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:#E4E0FF;
+}
+
+
+.form-login{
+    width: 100%;
+    max-width: 330px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+.form-login button{
+    width: 100%;
+}
+
+.btn-lg{
+    padding-top: 20px;
+    border-radius: .3rem;
+}
+
+
+/* DASHBOARD */
+
+.navbar-lm{
+    background-color: #E4E0FF !important;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+}
+
+.navbar-custom{
+    background-color: #E4E0FF !important;
+    
+}
+
+.sidebar{
+    top: 70px !important;
+}
+
+.sidebar .nav-link{
+    font-size: 15px;
+}
+
+[role="main"] {
+    padding-top: 80px !important;
+}
+
+.h2{
+    color:#1e227b;
+    font-size: 50px;
+    
+}
+
+.card-avaible{
+    overflow: hidden;
+    max-height: 619px;
+}
+
+.title-card{
+    font-weight: 600;
+}
+
+.questions-block{
+    clear: both;
+    position: relative;
+}
+
+.card-subtitle{
+    display: block;
+    clear: both;
+    overflow: hidden
+}
