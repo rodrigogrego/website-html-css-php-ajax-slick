@@ -226,7 +226,7 @@ a.sub-itens:hover{
 }
 
 
-/* .title-portfolio{
+.title-portfolio{
     position: relative;
     max-height: 160px;
 
@@ -241,7 +241,27 @@ a.sub-itens:hover{
     left: 0;
     right: 0;
     text-align: center;
-} */
+}
+
+.title-portfolio .page-portfolio{
+    display: inline-block;
+    text-align: center;
+    background: #007caa;
+    width: auto;
+    padding: 10px 50px;
+    margin-top: 30px;
+}
+
+.page-portfolio{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
 
 .title-page .container{
     position: absolute;
@@ -314,7 +334,7 @@ picture{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background: #E6E6DA;
+    background: #F7FFF2;
     padding-top: 50px;
 }  
 
@@ -332,7 +352,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    background: #E6E6DA;
+    background: #F7FFF2;
     margin-left: -15px
 }
 
@@ -481,7 +501,7 @@ main{
     margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    background-color: #f1f1f1;
+    background-color: #F7FFF2;
     
 }
 
@@ -489,7 +509,7 @@ main{
     margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    background: #E6E6DA;
+    background: #F7FFF2;
     
     
 }
@@ -504,7 +524,7 @@ main{
 
 .c-portfolio{
     text-align: -webkit-center !important;
-    max-height: 610px;
+    max-height: 790px;
     min-height: 610px;
 }
 
@@ -569,7 +589,7 @@ main{
     }
     .title-portfolio .page-portfolio{
         position: relative;
-        margin-bottom:10px;
+        margin-bottom: -10px;
     }
     .img-clients{
         padding-left: 10px;
@@ -664,7 +684,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: #eff0f2;
+    background-color: #F7FFF2;
 }
 
 .row-4{
@@ -766,7 +786,7 @@ main{
 
 #fluxogram{
     width: 100%;
-    background: #eff0f2;
+    background: #F7FFF2;
     padding: 20px;
     transition: .10s;
     
