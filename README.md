@@ -1,6 +1,16 @@
-# website-html-css-php-ajax-slick
-Website feito para empresa baiana LM Engenharia.
+## Website feito para empresa baiana LM Engenharia.
 
-///// PARA FORMULÁRIOS COM ENVIO DE ARQUIVOS
+### Website made for Bahian company LM Engenharia.
 
-Criar uma pastar vazia "upload"
+
+Bibliotecas e Tecnologias utilizadas:
+- JAVASCRIPT/AJAX;
+- HTML;
+- CSS;
+- PHP/PHPMAILER;
+- SLICK.
+
+![Index](https://i.imgur.com/kpbxcvW.png "Index")
+
+![Org](https://i.imgur.com/mdmO3YN.png "Org")
+
