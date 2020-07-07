@@ -209,7 +209,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
 
 
                                         <textarea name="descricao_denuncia" class="form-control form-controle-text" id="input-5"
-                                                rows="4" placeholder="Descrição da denúncia..." required></textarea>
+                                                rows="4" placeholder="Description of the complaint..." required></textarea>
                                         <br>
 
                                 </div>

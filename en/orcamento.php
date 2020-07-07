@@ -251,11 +251,11 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                 <form id="contato-form" action="orcamento.php" method="POST">
                     <div class="contato-title">
                         <input type="text" name="name" class="form-control form-controle name" id="input-2"
-                            placeholder="Nome ou Empresa*" required>
+                            placeholder="Name or Company*" required>
                     </div>
                     <div class="contato-title">
                         <input type="tel" name="telefone" id="telefone" pattern="^[1-9]{2}[2-9][0-9]{7,8}$" maxlength="15" class="form-control form-controle email"
-                            id="input-3" placeholder="Telefone*" required>
+                            id="input-3" placeholder="Telephone*" required>
                     </div>
                     <div class="contato-title">
                         <input type="email" name="email" class="form-control form-controle email" id="input-3"
@@ -272,13 +272,13 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                     </div>
                     <div class="contato-title">
                         <input type="text" name="local_servico" class="form-control form-controle about" id="input-4"
-                            placeholder="Local do Serviço*" required>
+                            placeholder="Service Location*" required>
                         <br>
                     </div>
 
                     <div class="contato-title">
                         <input type="text" name="prazo_execucao" class="form-control form-controle about" id="input-4"
-                            placeholder="Prazo de Execução do Serviço*" required>
+                            placeholder="Service Execution Deadline*" required>
                         <br>
                     </div>
                     <div class="ouvidoria-title d-flex flex-column pl-2">
@@ -287,7 +287,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                     </div>
                     <div class="contato-title">
                         <textarea name="descricao_orcamento" class="form-control form-controle-text description" id="input-5"
-                            rows="4" placeholder="Descreva o seu serviço..." required></textarea>
+                            rows="4" placeholder="Describe your service..." required></textarea>
                         <br>
                     </div>
 

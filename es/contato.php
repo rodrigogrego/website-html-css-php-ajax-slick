@@ -148,7 +148,7 @@ if(isset($_POST["submit"])){
                                 <div class="sub-item" id="drop">
                                         <a class="sub-itens" href="history.html"
                                                 style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
-                                                Nuestra historia</a>
+                                                Nuestra Historia</a>
                                         <a class="sub-itens" href="corporativo.html"
                                                 style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
                                                 Corporativo
