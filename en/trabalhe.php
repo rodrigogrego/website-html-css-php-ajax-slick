@@ -215,7 +215,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link" href="contato.php">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="trabalhe.html">Work with us</a>
+                                        <a class="nav-link" href="trabalhe.php">Work with us</a>
                                 </li>
                                 <li class="nav-item">
                                         <a class="nav-link" href="orcamento.php">Budget</a>
@@ -445,7 +445,7 @@ if(isset($_POST["submit"])){
                                 <br>
 
 
-                                <a href="">
+                                <a href="../es/trabalhe.php">
 
                                         <img src="img/icon/uk.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
@@ -455,7 +455,7 @@ if(isset($_POST["submit"])){
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contact</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Work with us</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
                                 <br>

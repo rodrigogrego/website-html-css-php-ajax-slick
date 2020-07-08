@@ -94,7 +94,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
 
         <div class="title-ouvi">
                 <picture class="image-ouvi">
-                        <img src="img/ouvidoria.png" class="img-fluid-ouvi" alt="...">
+                        <img src="img/ouvidoria_br.png" class="img-fluid-ouvi" alt="...">
                 </picture>
                 <div class="container-ouvi">
 
@@ -289,7 +289,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contato</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Trabalhe Conosco</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Trabalhe Conosco</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
                                 <br>

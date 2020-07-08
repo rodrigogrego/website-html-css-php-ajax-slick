@@ -94,7 +94,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
 
 <div class="title-ouvi">
                 <picture class="image-ouvi">
-                        <img src="../img/ouvidoria.png" class="img-fluid-ouvi" alt="...">
+                        <img src="../img/ouvidoria_es.png" class="img-fluid-ouvi" alt="...">
                 </picture>
                 <div class="container-ouvi">
                         
@@ -275,7 +275,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                                 <br>
         
         
-                                <a href="">
+                                <a href="../ouvidoria2.php">
         
                                         <img src="../img/icon/br.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
@@ -285,7 +285,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contacto</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Trabaja con nosotros</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
                                 <br>

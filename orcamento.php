@@ -250,7 +250,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                     <a class="nav-link" href="contato.php">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trabalhe.html">Trabalhe Conosco</a>
+                    <a class="nav-link" href="trabalhe.php">Trabalhe Conosco</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="orcamento.php">Orçamento</a>
@@ -423,7 +423,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contato</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Trabalhe Conosco</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Trabalhe Conosco</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
                                 <br>

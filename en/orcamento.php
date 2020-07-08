@@ -356,7 +356,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                 <br>
             
             
-                                <a href="">
+                                <a href="../es/orcamento.php">
             
                                         <img src="../img/icon/es.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
@@ -366,7 +366,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contact</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Work with us</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
                                 <br>

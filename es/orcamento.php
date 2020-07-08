@@ -193,7 +193,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                 <a class="nav-link" href="contato.php">Contacto</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="trabalhe.html">Trabaja con nosotros</a>
+                                <a class="nav-link" href="trabalhe.php">Trabaja con nosotros</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="orcamento.php">Presupuesto</a>
@@ -355,7 +355,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                 <br>
         
         
-                                <a href="">
+                                <a href="../orcamento.php">
         
                                         <img src="../img/icon/br.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
@@ -365,7 +365,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contacto</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.html">Trabaja con nosotros</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
                                 <br>
