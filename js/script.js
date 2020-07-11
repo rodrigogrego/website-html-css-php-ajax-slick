@@ -2,7 +2,7 @@
 
 $('.center').slick({
   centerMode: true,
-  centerPadding: '60px',
+  centerPadding: '10px',
   slidesToShow: 3,
   autoplay: true,
   autoplaySpeed: 1000,
@@ -27,6 +27,8 @@ $('.center').slick({
     }
   ]
 });
+
+
 
   
 

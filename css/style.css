@@ -542,9 +542,9 @@ main{
 
     }
 
-    .value-col{
+    /* .value-col{
         min-width: 330px !important;
-    }
+    } */
     .navbar-collapse{
         background-color: white !important;
         padding: 10px;
@@ -680,11 +680,16 @@ main{
 
 /* QUEM SOMOS DEVICES */
 
+.caixa{
+    
+  width:100%;
+  background-image: url(../img/corporativo_back.png);
+}
+
 .row-3{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    background-color: #F7FFF2;
 }
 
 .row-4{
@@ -785,11 +790,12 @@ main{
 /* FLUXOGRAMA */
 
 #fluxogram{
-    width: 100%;
     background: #F7FFF2;
-    padding: 20px;
     transition: .10s;
-    
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     
 }
 
