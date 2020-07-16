@@ -280,6 +280,11 @@ a.sub-itens:hover{
     padding-right: 15px;
 }
 
+body[data-aos-duration='3000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='3000'] {
+  transition-duration: 3000ms;
+}
+
 .title-page .page-title{
     display: inline-block;
     text-align: center;
