@@ -6,6 +6,9 @@
 $message = "";
 
 if(isset($_POST["submit"])){
+   $path = 'upload/'.$_FILES['arquivo']['name'];
+   move_uploaded_file($_FILES['arquivo']['tmp_name'],
+   $path);
        
    $message = "
 
@@ -14,7 +17,7 @@ if(isset($_POST["submit"])){
 <table align='left' border='0' cellpadding='0' cellspacing='0' width='600'>
   <tr>
     <td background-color='#ffffff' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-      <b>Área de Interesse: ".$_POST['area']."</b>
+      <b>Área de Interesse:  ".$_POST['area']."</b>
    
       
      </td>
@@ -30,16 +33,6 @@ if(isset($_POST["submit"])){
    
       
      </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Assunto: ".$_POST['assunto']."</b>
-   </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Mensagem:".$_POST['mensaggem']."</b>
-   </td>
   </tr>
  <td background-color='#c8d0d8;' style='padding: 30px 30px 30px 30px; font-family: Arial, sans-serif; font-size: 24px; color: #1e227b;'>
   <table style='border: 0'; cellpadding='0' cellspacing='0' width='100%'>
@@ -86,27 +79,30 @@ if(isset($_POST["submit"])){
         $mail2->SMTPSecure = 'tls';
         $mail2->SetLanguage("br");
         
-        $mail2->From = "teste_lucas@praxisjr.com.br";
+        $mail2->From = "teste2_lucas@praxisjr.com.br";
         $mail2->FromName = "Praxis Empresa Junior";
 
         $mail2->Host    = "praxisjr.com.br";
         $mail2->Port    = 587;
         $mail2->SMTPAuth        = true;
-        $mail2->Username = "teste_lucas@praxisjr.com.br";
-        $mail2->Password = "Teste123*";
+        $mail2->Username = "teste2_lucas@praxisjr.com.br";
+        $mail2->Password = "Teste123@";
         
         $mail2->AddAddress('rodrigo.melo@praxisjr.com.br', 'Rodrigo');
 
-        $mail2->Subject= 'Contato - LM Engenharia';
+        $mail2->Subject= 'Trabalhe Conosco - LM Engenharia';
         
         $mail2->IsHTML(true);
+        
+        $mail2->AddAttachment($path);
         
         $mail2->MsgHTML($message);
         
         if($mail2->Send()){
-            $message = "<div class='btn-success p-3' >Successfully sent!</div>";
+            $message = "<div class='btn-success p-3' >Enviado con éxito!</div>";
+            unlink($path);
         }else{
-            $message = "<div class='btn-danger p-3' >ERROR! Try again.</div>";
+            $message = "<div class='btn-danger p-3' >¡ERROR! Inténtalo de nuevo.</div>";
             
         }
        
@@ -253,14 +249,10 @@ if(isset($_POST["submit"])){
                                 </div>
                 </div>
 
+                <div class="intro-job justify-content-center">
+                        <h3>SUBTITULO</h3>
+                </div>
 
-        
-                
-                
-        </section>
-
-
-                
                 <section id="contact">
 
                         <div class="contato-form">
@@ -271,7 +263,7 @@ if(isset($_POST["submit"])){
                                         <div class="container-contact">
                                                 <div class="border-contact">
                                                         
-                                                        <h3 class="title-contact">Trabaja con nosotros</h3>
+                                                        <h3 class="title-contact">Únetenos</h3>
                                                 </div>
                                                 
                                         </div>
@@ -281,86 +273,65 @@ if(isset($_POST["submit"])){
                                 echo ($message);
                                 ?>
                                 
-                                <form  id="contato-form" method="POST">                                                                                                                    
-                                        <div class="contato-title">                                                
+                                <form id="contato-form" method="post" enctype="multipart/form-data">
+
+                                        <div class="contato-title">
+
+
+
+
+                                                
                                                 <select name="area" class="form-control form-controle" required>
-                                                        <option value="">Campo de interés*</option>
+                                                        <option value="">Vacante de interés*</option>
                                                         <option value="1">2</option>
                                                         <option value="2">3</option>
                                                         <option value="3">4</option>
                                                         <option value="4">5</option>
                                                 </select>
                                                 <br>
-                                                
+
                                         </div>
-                                        
-                                        
+
+
                                         <!-- <label for="input-2">Nome*</label> -->
                                         <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <input type="text" name="name" class="form-control form-controle name" id="input-2" placeholder="Nombre*" required>
-                                                
-                                                
-                                        </div>        
-                                        
-                                        <!-- <label for="input-3">E-mail*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="email" name="email" class="form-control form-controle email" id="input-3" placeholder="E-mail*" required>
-                                                
-                                                
-                                        </div>
-                                        
-                                        
-                                        <!-- <label for="input-4">Assunto*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="text" name="assunto" class="form-control form-controle about" id="input-4" placeholder="Sujeto*" required>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        <!-- <label for="input-5">Comentários*</label> -->
-                                        <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <textarea name="mensagem" class="form-control form-controle-text" id="input-5" rows="4" placeholder="Mensaje..." required></textarea>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                               
-                                        <div class="contato-title">
-                                                 <input type="hidden" name="acao" value="enviar"/>
-                                                <button type="submit" class="form-controle submit" value="Submit" name="submit" >ENVIAR</button>
-                                                
-                                        </div>
-                                        
-                                        
-                                </form>
-                                
-                        </div>  
 
-                </section>
-                        <div class="others">
-                                <div class="col">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                        
-                                </div>
-                        </div>
+
+
+                                                <input type="text" name="name" class="form-control form-controle name"
+                                                        placeholder="Nombre*" required>
+
+
+                                        </div>
+
+                                        <div class="contato-title">
+
+
+
+                                                <input type="email" name="email" class="form-control form-controle email"
+                                                        placeholder="E-mail*" required>
+
+
+                                        </div>
+
+
+                                        <div class="contato-title">
+                                                <input type="file" name="arquivo" class="form-controle file"  accept=".pdf, .doc, .docx" required>
+
+                                        </div>
+
+
+
+                                        <div class="contato-title">
+
+
+                                                <button type="submit" class="form-controle submit"
+                                                        value="Submit" name="submit">ENVIAR</button>
+
+                                        </div>
+
+
+                                        </form>
 
                         <footer class="pt-4 text-center">
                 <div class="row">

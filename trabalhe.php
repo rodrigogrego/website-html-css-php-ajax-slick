@@ -1,11 +1,15 @@
 
 
+
 <?php
 
 
 $message = "";
 
 if(isset($_POST["submit"])){
+   $path = 'upload/'.$_FILES['arquivo']['name'];
+   move_uploaded_file($_FILES['arquivo']['tmp_name'],
+   $path);
        
    $message = "
 
@@ -14,7 +18,7 @@ if(isset($_POST["submit"])){
 <table align='left' border='0' cellpadding='0' cellspacing='0' width='600'>
   <tr>
     <td background-color='#ffffff' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-      <b>Área de Interesse: ".$_POST['area']."</b>
+      <b>Área de Interesse:  ".$_POST['area']."</b>
    
       
      </td>
@@ -30,16 +34,6 @@ if(isset($_POST["submit"])){
    
       
      </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Assunto: ".$_POST['assunto']."</b>
-   </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Mensagem:".$_POST['mensaggem']."</b>
-   </td>
   </tr>
  <td background-color='#c8d0d8;' style='padding: 30px 30px 30px 30px; font-family: Arial, sans-serif; font-size: 24px; color: #1e227b;'>
   <table style='border: 0'; cellpadding='0' cellspacing='0' width='100%'>
@@ -86,25 +80,28 @@ if(isset($_POST["submit"])){
         $mail2->SMTPSecure = 'tls';
         $mail2->SetLanguage("br");
         
-        $mail2->From = "teste_lucas@praxisjr.com.br";
+        $mail2->From = "teste2_lucas@praxisjr.com.br";
         $mail2->FromName = "Praxis Empresa Junior";
 
         $mail2->Host    = "praxisjr.com.br";
         $mail2->Port    = 587;
         $mail2->SMTPAuth        = true;
-        $mail2->Username = "teste_lucas@praxisjr.com.br";
-        $mail2->Password = "Teste123*";
+        $mail2->Username = "teste2_lucas@praxisjr.com.br";
+        $mail2->Password = "Teste123@";
         
         $mail2->AddAddress('rodrigo.melo@praxisjr.com.br', 'Rodrigo');
 
-        $mail2->Subject= 'Contato - LM Engenharia';
+        $mail2->Subject= 'Trabalhe Conosco - LM Engenharia';
         
         $mail2->IsHTML(true);
+        
+        $mail2->AddAttachment($path);
         
         $mail2->MsgHTML($message);
         
         if($mail2->Send()){
-            $message = "<div class='btn-success p-3' >Mensagem enviada com sucesso!</div>";
+            $message = "<div class='btn-success p-3' >Enviado com sucesso!</div>";
+            unlink($path);
         }else{
             $message = "<div class='btn-danger p-3' >ERROR! Tente novamente.</div>";
             
@@ -118,21 +115,24 @@ if(isset($_POST["submit"])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="icon" href="img/icon/icon.png">
-    <title>Contato</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+        <link rel="icon" href="img/icon/icon.png">
+        <title>Trabalhe Conosco</title>
 </head>
+
 <body>
 
-                    <!-- NAVBAR AREA -->
-                    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- NAVBAR AREA -->
+        <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="index.html">
-                        <img src="img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo"></a>
+                        <img src="img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
                         aria-expanded="false" aria-label="Alterna navegação">
@@ -143,26 +143,34 @@ if(isset($_POST["submit"])){
                                 <li class="nav-item dropdown ">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Quem Somos</a>
-                                        <div class="sub-item">
+                                                aria-expanded="false" onclick="funcaoClick()">Quem Somos</a>
+                                        <div class="sub-item" id="drop">
                                                 <a class="sub-itens" href="history.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px;">
                                                         Nossa
-                                                        História</a>
+                                                        História
+                                                </a>
                                                 <a class="sub-itens" href="corporativo.html"
-                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
                                                         Corporativo
                                                 </a>
                                                 <a class="sub-itens" href="politica.html"
-                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
                                                         Política
-                                                        de Gestão</a>
+                                                        de Gestão
+                                                </a>
                                                 <a class="sub-itens" href="compliance.html"
-                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
                                                         Compliance,
-                                                        Ética e Transparência</a> 
+                                                        Ética e Transparência
+                                                </a> 
                                                         <a class="sub-itens" href="seguranca.html"
-                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
                                                         Segurança
                                                 </a> 
                                                 </div>
@@ -173,40 +181,91 @@ if(isset($_POST["submit"])){
                                                 id="navbarDropdownMenuLink">Serviços </a>
                                         <div class="sub-item">
                                                 <a class="sub-itens" href="eletrica.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Elétrica
-                                                        Industrial</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
+                                                         Elétrica
+                                                        Industrial
+                                                </a>
+
                                                 <a class="sub-itens" href="mecanica.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Mecânica</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
+                                                         Mecânica
+                                                        </a>
+
                                                 <a class="sub-itens" href="instrumentacao.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Instrumentação</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
+                                                         Instrumentação
+                                                        </a>
+
                                                 <a class="sub-itens" href="civil.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Civil</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px;">
+                                                        Civil
+                                                </a>
+
                                                 <a class="sub-itens" href="caldeiraria.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Caldeiraria</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px;">
+                                                         Caldeiraria
+                                                        </a>
+
                                                 <a class="sub-itens" href="valvulas.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Válvulas</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px;">
+                                                        Válvulas
+                                                </a>
+
                                                 <a class="sub-itens" href="facilites.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilites</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px;">
+                                                        Facilites
+                                                </a>
                                         </div>
                                 </li>
                                 <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Portfólio</a>
-                                        <div class="sub-item">
+                                                aria-expanded="false" onclick="funcaoClick2()">
+                                                Portfólio</a>
+
+                                        <div class="sub-item" id="drop2">
                                                 <a class="sub-itens" href="cenpes.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Cenpes</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ;
+                                                         border-bottom-width: 1px; ">
+                                                         Cenpes
+                                                </a>
+
                                                 <a class="sub-itens" href="sergipe.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Sergipe</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px; ">
+                                                        Sergipe
+                                                </a>
+
                                                 <a class="sub-itens" href="roque.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">São
-                                                        Roque</a>
-                                                <a class="sub-itens" href="knauf.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Knauf</a>
-                                                <a class="sub-itens" href="betumat.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
-                                                <a class="sub-itens" href="jpa.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Engenharia</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
+                                                        border-bottom-width: 1px; ">
+                                                        São Roque
+                                                </a>
+
+                                                <a class="sub-itens" href="knauf.html" style=" font-size: 16px ;
+                                                border-bottom: 1px solid #1e227b ; 
+                                                border-bottom-width: 1px; ">
+                                                Knauf
+                                                </a>
+
+                                                <a class="sub-itens" href="betumat.html" style=" font-size: 16px ;
+                                                border-bottom: 1px solid #1e227b ;
+                                                 border-bottom-width: 1px; ">
+                                                 Betumat
+                                                </a>
+
+                                                <a class="sub-itens" href="jpa.html" style=" font-size: 16px ;
+                                                border-bottom: 1px solid #1e227b ; 
+                                                border-bottom-width: 1px; ">
+                                                JPA Engenharia
+                                                </a>
                                         </div>
 
                                 </li>
@@ -217,7 +276,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link" href="contato.php">Contato</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="trabalhe.php">Trabalhe Conosco</a>
+                                        <a class="nav-link" href="trabalhe.html">Trabalhe Conosco</a>
                                 </li>
                                 <li class="nav-item">
                                         <a class="nav-link" href="orcamento.php">Orçamento</a>
@@ -242,170 +301,114 @@ if(isset($_POST["submit"])){
                                 </div>
                         </ul>
                 </div>
-    </nav>
-                <!-- END NAVBAR AREA -->
+</nav>
+        <!-- END NAVBAR AREA -->
+        <div class="title-page">
+                <picture class="image-title">
+                        <img src="img/job.png" class="img-fluid-serv" alt="...">
+                </picture>
+                <div class="container">
+                        <h1 class="page-title">TRABALHE CONOSCO</h1>
 
-
-                <div class="title-page">
-                        <picture class="image-title">
-                                <img src="img/contact.jpg" class="img-fluid-serv" alt="...">
-                        </picture>
-                                <div class="container">
-                                        <h1 class="page-title">CONTATO</h1>
-
-                                </div>
                 </div>
+        </div>
 
 
-        
-                
-                
-        </section>
-        
-        
-        <section id="contact2">
 
-                                
-                                <div class="row-other">
-                                        <div class="contact-phone mt-5">
+        <div class="intro-job justify-content-center">
+                <h3>SUBTITULO</h3>
+        </div>
 
-                                               
 
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        <img src="img/icon/call.png" class="img-fluid icon" alt="">
-                                                </div>
-                                                
-                                                
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        
-                                                        <h3 class="title-contact" >Telefone</h3>
-                                                        <p>+55 71 0000-0000</p>
-                                                </div>
-        
-                
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                <img src="img/icon/email.png" class="img-fluid icon" alt="">
-                                                        </div>
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                
-                                                                <h3 class="title-contact">E-mail</h3>
-                                                                <p>rodrigo@gmail.com</p>
-                                                        </div>
-                                                                
-                                                                
-                                                                
-                                                        </div>
+        <section id="contact">
 
-                                                </div>
 
-                
-                <section id="contact">
+                <div class="contato-form">
 
-                        <div class="contato-form">
-                                
-                                
-                                <div class="page-contact">
-                                        
-                                        <div class="container-contact">
-                                                <div class="border-contact">
-                                                        
-                                                        <h3 class="title-contact">Fale Conosco</h3>
-                                                </div>
-                                                
+
+                        <div class="page-contact">
+
+                                <div class="container-contact">
+                                        <div class="border-contact">
+
+                                                <h3 class="title-contact">Junte-se a nós</h3>
                                         </div>
-                                </div>
-                                
-                                <?php
-                                echo ($message);
-                                ?>
-                                
-                                <form  id="contato-form" method="POST">                                                                                                                    
-                                        <div class="contato-title">                                                
-                                                <select name="area" class="form-control form-controle" required>
-                                                        <option value="">Área de Interesse*</option>
-                                                        <option value="1">2</option>
-                                                        <option value="2">3</option>
-                                                        <option value="3">4</option>
-                                                        <option value="4">5</option>
-                                                </select>
-                                                <br>
-                                                
-                                        </div>
-                                        
-                                        
-                                        <!-- <label for="input-2">Nome*</label> -->
-                                        <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <input type="text" name="name" class="form-control form-controle name" id="input-2" placeholder="Nome*" required>
-                                                
-                                                
-                                        </div>        
-                                        
-                                        <!-- <label for="input-3">E-mail*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="email" name="email" class="form-control form-controle email" id="input-3" placeholder="E-mail*" required>
-                                                
-                                                
-                                        </div>
-                                        
-                                        
-                                        <!-- <label for="input-4">Assunto*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="text" name="assunto" class="form-control form-controle about" id="input-4" placeholder="Assunto*" required>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        <!-- <label for="input-5">Comentários*</label> -->
-                                        <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <textarea name="mensagem" class="form-control form-controle-text" id="input-5" rows="4" placeholder="Mensagem..." required></textarea>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                               
-                                        <div class="contato-title">
-                                                 <input type="hidden" name="acao" value="enviar"/>
-                                                <button type="submit" class="form-controle submit" value="Submit" name="submit" >ENVIAR MENSAGEM</button>
-                                                
-                                        </div>
-                                        
-                                        
-                                </form>
-                                
-                        </div>  
 
-                </section>
-                        <div class="others">
-                                <div class="col">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                        
                                 </div>
                         </div>
+                        
+                            <?php
+                                echo ($message);
+                            ?>
+
+                        <form id="contato-form" method="post" enctype="multipart/form-data">
 
 
-                        <footer class="pt-4 text-center">
+
+                                <div class="contato-title">
+
+
+
+                                
+                                        
+                                        <select name="area" class="form-control form-controle" required>
+                                                <option value="">Vaga de Interesse*</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                                <option value="4">5</option>
+                                        </select>
+                                        <br>
+
+                                </div>
+
+
+                                <!-- <label for="input-2">Nome*</label> -->
+                                <div class="contato-title">
+
+
+
+                                        <input type="text" name="name" class="form-control form-controle name"
+                                                placeholder="Nome*" required>
+
+
+                                </div>
+
+                                <div class="contato-title">
+
+
+
+                                        <input type="email" name="email" class="form-control form-controle email"
+                                                placeholder="E-mail*" required>
+
+
+                                </div>
+
+
+                                <div class="contato-title">
+                                        <input type="file" name="arquivo" class="form-controle file"  accept=".pdf, .doc, .docx" required>
+
+                                </div>
+
+
+
+                                <div class="contato-title">
+
+                            
+                                        <button type="submit" class="form-controle submit"
+                                                value="Submit" name="submit">ENVIAR</button>
+
+                                </div>
+
+
+                        </form>
+
+                </div>
+
+        </section>
+
+
+        <footer class="pt-4 text-center">
                 <div class="row">
 
                         <div class="col-md-3 mt-md-3 mt-3">
@@ -429,8 +432,8 @@ if(isset($_POST["submit"])){
                                                 <a href="politica.html" class="a-footer">Política de Gestão</a>
                                         </li>
                                         <br>
-                                           <li>
-                                                <a href="seguranca.html" class="a-footer">Segurança</a>
+                                        <li>
+                                            <a href="seguranca.html" class="a-footer">Segurança</a>
                                         </li>
                                 </ul>
                                 <br>
@@ -457,7 +460,7 @@ if(isset($_POST["submit"])){
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contato</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.php">Trabalhe Conosco</a></h5>
+                                <h5><a class="a-footer" href="trabalhe.html">Trabalhe Conosco</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
                                 <br>
@@ -491,10 +494,10 @@ if(isset($_POST["submit"])){
                 </a>
         </div>
 
-    
-                <!-- BOOTSTRAP JS FILE -->
-                    <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
-                    <script>
+
+        <!-- BOOTSTRAP JS FILE -->
+        <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
+       <script>
                 var mq = window.matchMedia('(max-width: 780px)');
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
@@ -600,12 +603,43 @@ if(isset($_POST["submit"])){
                 });
         </script>
 
+<script>
+
+        function funcaoClick() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var x = document.getElementById("drop");
+          if(mq.matches && x.className.indexOf("show") == -1){
+ 
+                          x.className += "show";
+                }
+           else {
+            x.className = x.className.replace("show", "");
+       
+          }
+        }
+        </script>
+
+        <script>
+        function funcaoClick2() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var y = document.getElementById("drop2")
+          if(mq.matches && y.className.indexOf("show2") == -1){
+                 
+                y.className += "show2";
+                }
+           else {
+            y.className = y.className.replace("show2", "");
+          }
+        }
+</script>
 
 
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-            <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 
 </body>
+
 </html>

@@ -6,6 +6,9 @@
 $message = "";
 
 if(isset($_POST["submit"])){
+   $path = 'upload/'.$_FILES['arquivo']['name'];
+   move_uploaded_file($_FILES['arquivo']['tmp_name'],
+   $path);
        
    $message = "
 
@@ -14,7 +17,7 @@ if(isset($_POST["submit"])){
 <table align='left' border='0' cellpadding='0' cellspacing='0' width='600'>
   <tr>
     <td background-color='#ffffff' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-      <b>Área de Interesse: ".$_POST['area']."</b>
+      <b>Área de Interesse:  ".$_POST['area']."</b>
    
       
      </td>
@@ -30,16 +33,6 @@ if(isset($_POST["submit"])){
    
       
      </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Assunto: ".$_POST['assunto']."</b>
-   </td>
-  </tr>
- <tr>
-   <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
-   <b> Mensagem:".$_POST['mensaggem']."</b>
-   </td>
   </tr>
  <td background-color='#c8d0d8;' style='padding: 30px 30px 30px 30px; font-family: Arial, sans-serif; font-size: 24px; color: #1e227b;'>
   <table style='border: 0'; cellpadding='0' cellspacing='0' width='100%'>
@@ -86,25 +79,28 @@ if(isset($_POST["submit"])){
         $mail2->SMTPSecure = 'tls';
         $mail2->SetLanguage("br");
         
-        $mail2->From = "teste_lucas@praxisjr.com.br";
+        $mail2->From = "teste2_lucas@praxisjr.com.br";
         $mail2->FromName = "Praxis Empresa Junior";
 
         $mail2->Host    = "praxisjr.com.br";
         $mail2->Port    = 587;
         $mail2->SMTPAuth        = true;
-        $mail2->Username = "teste_lucas@praxisjr.com.br";
-        $mail2->Password = "Teste123*";
+        $mail2->Username = "teste2_lucas@praxisjr.com.br";
+        $mail2->Password = "Teste123@";
         
         $mail2->AddAddress('rodrigo.melo@praxisjr.com.br', 'Rodrigo');
 
-        $mail2->Subject= 'Contato - LM Engenharia';
+        $mail2->Subject= 'Trabalhe Conosco - LM Engenharia';
         
         $mail2->IsHTML(true);
+        
+        $mail2->AddAttachment($path);
         
         $mail2->MsgHTML($message);
         
         if($mail2->Send()){
-            $message = "<div class='btn-success p-3' >Successfully sent!</div>";
+            $message = "<div class='btn-success p-3' >Sent with success!</div>";
+            unlink($path);
         }else{
             $message = "<div class='btn-danger p-3' >ERROR! Try again.</div>";
             
@@ -116,16 +112,17 @@ if(isset($_POST["submit"])){
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="icon" href="img/icon/icon.png">
-    <title>Contato</title>
+    <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="icon" href="../img/icon/icon.png">
+    <title>Work With Us</title>
 </head>
 <body>
 
@@ -256,152 +253,97 @@ if(isset($_POST["submit"])){
 
 
         
-                
-                
-        </section>
-        
-        
-        <section id="contact2">
+               <div class="intro-job justify-content-center">
+                <h3>SUBTITULO</h3>
+        </div>
 
-                                
-                                <div class="row-other">
-                                        <div class="contact-phone mt-5">
 
-                                               
+        <section id="contact">
 
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        <img src="img/icon/call.png" class="img-fluid icon" alt="">
-                                                </div>
-                                                
-                                                
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        
-                                                        <h3 class="title-contact" >Telephone</h3>
-                                                        <p>+55 71 0000-0000</p>
-                                                </div>
-        
-                
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                <img src="img/icon/email.png" class="img-fluid icon" alt="">
-                                                        </div>
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                
-                                                                <h3 class="title-contact">E-mail</h3>
-                                                                <p>rodrigo@gmail.com</p>
-                                                        </div>
-                                                                
-                                                                
-                                                                
-                                                        </div>
 
-                                                </div>
+                <div class="contato-form">
 
-                
-                <section id="contact">
 
-                        <div class="contato-form">
-                                
-                                
-                                <div class="page-contact">
-                                        
-                                        <div class="container-contact">
-                                                <div class="border-contact">
-                                                        
-                                                        <h3 class="title-contact">Work with us</h3>
-                                                </div>
-                                                
+                        <div class="page-contact">
+
+                                <div class="container-contact">
+                                        <div class="border-contact">
+
+                                                <h3 class="title-contact">Join Us</h3>
                                         </div>
-                                </div>
-                                
-                                <?php
-                                echo ($message);
-                                ?>
-                                
-                                <form  id="contato-form" method="POST">                                                                                                                    
-                                        <div class="contato-title">                                                
-                                                <select name="area" class="form-control form-controle" required>
-                                                        <option value="">Field of interest*</option>
-                                                        <option value="1">2</option>
-                                                        <option value="2">3</option>
-                                                        <option value="3">4</option>
-                                                        <option value="4">5</option>
-                                                </select>
-                                                <br>
-                                                
-                                        </div>
-                                        
-                                        
-                                        <!-- <label for="input-2">Nome*</label> -->
-                                        <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <input type="text" name="name" class="form-control form-controle name" id="input-2" placeholder="Name*" required>
-                                                
-                                                
-                                        </div>        
-                                        
-                                        <!-- <label for="input-3">E-mail*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="email" name="email" class="form-control form-controle email" id="input-3" placeholder="E-mail*" required>
-                                                
-                                                
-                                        </div>
-                                        
-                                        
-                                        <!-- <label for="input-4">Assunto*</label> -->
-                                        <div class="contato-title"> 
-                                                
-                                                
-                                                
-                                                <input type="text" name="assunto" class="form-control form-controle about" id="input-4" placeholder="Subject*" required>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        <!-- <label for="input-5">Comentários*</label> -->
-                                        <div class="contato-title">
-                                                
-                                                
-                                                
-                                                <textarea name="mensagem" class="form-control form-controle-text" id="input-5" rows="4" placeholder="Message..." required></textarea>
-                                                <br>
-                                                
-                                        </div>        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                               
-                                        <div class="contato-title">
-                                                 <input type="hidden" name="acao" value="enviar"/>
-                                                <button type="submit" class="form-controle submit" value="Submit" name="submit" >SEND</button>
-                                                
-                                        </div>
-                                        
-                                        
-                                </form>
-                                
-                        </div>  
 
-                </section>
-                        <div class="others">
-                                <div class="col">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                        
                                 </div>
                         </div>
+                        
+                            <?php
+                                echo ($message);
+                            ?>
 
+                        <form id="contato-form" method="post" enctype="multipart/form-data">
+
+
+
+                                <div class="contato-title">
+
+
+
+                                
+                                        
+                                        <select name="area" class="form-control form-controle" required>
+                                                <option value="">Interest vacant*</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                                <option value="4">5</option>
+                                        </select>
+                                        <br>
+
+                                </div>
+
+
+                                <!-- <label for="input-2">Nombre*</label> -->
+                                <div class="contato-title">
+
+
+
+                                        <input type="text" name="name" class="form-control form-controle name"
+                                                placeholder="Name*" required>
+
+
+                                </div>
+
+                                <div class="contato-title">
+
+
+
+                                        <input type="email" name="email" class="form-control form-controle email"
+                                                placeholder="E-mail*" required>
+
+
+                                </div>
+
+
+                                <div class="contato-title">
+                                        <input type="file" name="arquivo" class="form-controle file"  accept=".pdf, .doc, .docx" required>
+
+                                </div>
+
+
+
+                                <div class="contato-title">
+
+                            
+                                        <button type="submit" class="form-controle submit"
+                                                value="Submit" name="submit">SUBMIT</button>
+
+                                </div>
+
+
+                        </form>
+
+                </div>
+
+        </section>
 
                         <footer class="pt-4 text-center">
                 <div class="row">
@@ -447,7 +389,7 @@ if(isset($_POST["submit"])){
 
                                 <a href="../es/trabalhe.php">
 
-                                        <img src="img/icon/uk.png"
+                                        <img src="../img/icon/es.png"
                                                 style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
                                 </a>
                         </div>
