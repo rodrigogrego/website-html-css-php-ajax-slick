@@ -35,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-dash.css">
     <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <title>Lm-Engenharia</title>
+    <title>LM Engenharia</title>
 </head>
 <body class="text-center">
                

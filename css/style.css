@@ -339,7 +339,7 @@ picture{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background: #F7FFF2;
+    background: #e8e8e8;
     padding-top: 50px;
 }  
 
@@ -357,7 +357,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    background: #F7FFF2;
+    background: #e8e8e8;
     margin-left: -15px
 }
 
@@ -397,6 +397,13 @@ p{
     color: #222;
     margin-bottom: 30px;
     padding: 65px 25px;
+    background-color:white;
+    min-height:495px;
+    transition: .5s
+}
+
+.service-text:hover{
+    background-color:#72A9F2;
 }
 
 
@@ -688,7 +695,7 @@ main{
 .caixa{
     
   width:100%;
-  background-image: url(../img/corporativo_back.png);
+  background:#e8e8e8; 
 }
 
 .row-3{
@@ -795,7 +802,7 @@ main{
 /* FLUXOGRAMA */
 
 #fluxogram{
-    background: #F7FFF2;
+    background: #e8e8e8;
     transition: .10s;
     margin-right: auto;
     margin-left: auto;
