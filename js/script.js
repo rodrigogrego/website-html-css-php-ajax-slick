@@ -2,8 +2,8 @@
 
 $('.center').slick({
   centerMode: true,
-  centerPadding: '10px',
-  slidesToShow: 3,
+  centerPadding: '40px',
+  slidesToShow: 4,
   autoplay: true,
   autoplaySpeed: 1000,
   responsive: [

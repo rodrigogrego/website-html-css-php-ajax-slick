@@ -403,7 +403,7 @@ p{
 }
 
 .service-text:hover{
-    background-color:#72A9F2;
+    background-color:#e8e8e8;
 }
 
 
@@ -513,7 +513,7 @@ main{
     margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    background-color: #F7FFF2;
+    background-color: #e8e8e8;
     
 }
 
@@ -521,7 +521,7 @@ main{
     margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
-    background: #F7FFF2;
+    background: #e8e8e8;
     
     
 }
@@ -780,7 +780,7 @@ main{
 
 
 .slider{
- max-width: 700px;
+ max-width: 85%;
     margin: 0 auto;
 }
 

@@ -31,6 +31,13 @@ if(isset($_POST["submit"])){
       
      </td>
   </tr>
+  <tr>
+  <td background-color='#ffffff' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
+    <b>Telefone: ".$_POST['phone']."</b>
+ 
+    
+   </td>
+</tr>
  <tr>
    <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
    <b> Assunto: ".$_POST['assunto']."</b>
@@ -206,7 +213,9 @@ if(isset($_POST["submit"])){
                                                 <a class="sub-itens" href="betumat.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
                                                 <a class="sub-itens" href="jpa.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Engenharia</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
+                                                <a class="sub-itens" href="oxiteno.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
                                         </div>
 
                                 </li>
@@ -266,7 +275,7 @@ if(isset($_POST["submit"])){
         <section id="contact2">
 
                                 
-                                <div class="row-other">
+                                <!-- <div class="row-other">
                                         <div class="contact-phone mt-5">
 
                                                
@@ -300,7 +309,7 @@ if(isset($_POST["submit"])){
                                                                 
                                                         </div>
 
-                                                </div>
+                                                </div> -->
 
                 
                 <section id="contact">
@@ -353,6 +362,15 @@ if(isset($_POST["submit"])){
                                                 
                                                 
                                                 <input type="email" name="email" class="form-control form-controle email" id="input-3" placeholder="E-mail*" required>
+                                                
+                                                
+                                        </div>
+
+                                        <div class="contato-title"> 
+                                                
+                                                
+                                                
+                                        <input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
                                                 
                                                 
                                         </div>
@@ -429,8 +447,8 @@ if(isset($_POST["submit"])){
                                                 <a href="politica.html" class="a-footer">Política de Gestão</a>
                                         </li>
                                         <br>
-                                           <li>
-                                                <a href="seguranca.html" class="a-footer">Segurança</a>
+                                        <li>
+                                            <a href="seguranca.html" class="a-footer">Segurança</a>
                                         </li>
                                 </ul>
                                 <br>
@@ -441,7 +459,31 @@ if(isset($_POST["submit"])){
                                 <br>
                                 <ul class="list-unstyled">
                                         <li>
-                                                <a href="orcamento.php" class="a-footer">Orçamento</a>
+                                                <a href="caldeiraria.html" class="a-footer">Caldeiraria</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="civil.html" class="a-footer">Civil</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="eletrica.html" class="a-footer">Elétrica Industrial</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="facilites.html" class="a-footer">Facilites</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="instrumentacao.html" class="a-footer">Instrumentação</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="mecanica.html" class="a-footer">Mecânica</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="valvulas.html" class="a-footer">Válvulas</a>
                                         </li>
                                 </ul>
                                 <br>
@@ -457,6 +499,8 @@ if(isset($_POST["submit"])){
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contato</a></h5>
                                 <br>
+                                <h5><a class="a-footer" href="orcamento.php">Orçamento</a></h5>
+                                <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabalhe Conosco</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
@@ -464,14 +508,10 @@ if(isset($_POST["submit"])){
                         </div>
                         <div class="col-lg mt-md-3 ml-3">
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                                4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
-                                        width="100%" height="200px" frameborder="0" style="border:0;"
-                                        allowfullscreen=""></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                                width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-
-                                <p class="text-justify">Empresarial 2000 - R. das Ubaranas, 347 - Sala 501 - Amaralina,
-                                        Salvador - BA, 41900-390
+                                <p class="text-justify">Rua Miguel Calmon, 37, Edf. Belo Horizonte, Salas 607/609, Comércio, Salvador/BA, 40.015-010
 
                                 </p>
                                 <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
@@ -491,10 +531,11 @@ if(isset($_POST["submit"])){
                 </a>
         </div>
 
-    
-                <!-- BOOTSTRAP JS FILE -->
-                    <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
-                    <script>
+        <!-- BOOTSTRAP JS FILE -->
+        <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
+
+        <script>
+
                 var mq = window.matchMedia('(max-width: 780px)');
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
@@ -503,6 +544,7 @@ if(isset($_POST["submit"])){
                 if (mq.matches) {
                         $(logo).attr('src', 'img/icon/marca2.png');
                         $('.navbar-expand-lg').css("background-color", "#ffff");
+
                         $(icon1).attr('src', 'img/icon/login.png');
                         $(icon2).attr('src', 'img/icon/in.png');
                 }
@@ -525,10 +567,13 @@ if(isset($_POST["submit"])){
 
                         else if ($(this).scrollTop() > 1) {
                                 $('.navbar-expand-lg').css("background-color", "#ffff");
+                                $('.navbar').css("padding", "0rem 1rem 0rem 1rem");
+                               
 
 
                         } else {
                                 $('.navbar-expand-lg').css("background-color", "transparent");
+                                $('.navbar').css("padding", ".5rem 1rem .5rem 1rem");
 
 
                         }
@@ -600,7 +645,35 @@ if(isset($_POST["submit"])){
                 });
         </script>
 
+        <script>
 
+        function funcaoClick() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var x = document.getElementById("drop");
+          if(mq.matches && x.className.indexOf("show") == -1){
+ 
+                          x.className += "show";
+                }
+           else {
+            x.className = x.className.replace("show", "");
+       
+          }
+        }
+        </script>
+
+        <script>
+        function funcaoClick2() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var y = document.getElementById("drop2")
+          if(mq.matches && y.className.indexOf("show2") == -1){
+                 
+                y.className += "show2";
+                }
+           else {
+            y.className = y.className.replace("show2", "");
+          }
+        }
+        </script>
 
 
 
