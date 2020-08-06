@@ -604,9 +604,10 @@ main{
         margin-bottom: -10px;
     }
     .img-clients{
-        padding-left: 10px;
-        padding-right: 10px;
         width: 100%;
+        max-width:25px;
+        height:100%;
+        max-height:20px;
     }
     .img-index{
         padding: 1px !important;

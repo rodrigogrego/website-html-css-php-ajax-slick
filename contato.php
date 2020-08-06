@@ -200,7 +200,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">Portfólio</a>
-                                        <div class="sub-item">
+                                        <div class="sub-item" id="drop2">
                                                 <a class="sub-itens" href="cenpes.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Cenpes</a>
                                                 <a class="sub-itens" href="sergipe.html"
@@ -219,9 +219,7 @@ if(isset($_POST["submit"])){
                                         </div>
 
                                 </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="afiliados.html">Parceiros</a>
-                                </li>
+                     
                                 <li class="nav-item">
                                         <a class="nav-link" href="contato.php">Contato</a>
                                 </li>
@@ -370,7 +368,7 @@ if(isset($_POST["submit"])){
                                                 
                                                 
                                                 
-                                        <input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
+                                        <input type="tel" required="required" placeholder="Telefone*" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" class="form-control form-controle" />
                                                 
                                                 
                                         </div>
@@ -416,8 +414,8 @@ if(isset($_POST["submit"])){
                 </section>
                         <div class="others">
                                 <div class="col">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                                width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                                         
                                 </div>
                         </div>
@@ -527,7 +525,7 @@ if(isset($_POST["submit"])){
                 </p>
                 <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
 
-                        <img src="img/icon/praxis.png" style="position: relative;max-width: 25px;">
+                        <img src="img/icon/praxis.png" style="position: relative;max-width: 20px; bottom: .2rem;">
                 </a>
         </div>
 

@@ -341,7 +341,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                 </p>
                 <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
 
-                        <img src="img/icon/praxis.png" style="position: relative;max-width: 25px; bottom:.2rem;">
+                        <img src="img/icon/praxis.png" style="position: relative;max-width: 20px; bottom:.2rem;">
                 </a>
         </div>
 
