@@ -619,6 +619,9 @@ main{
     .border-ouvidoria{
         margin-bottom: -20px;
     }
+    .intro-clients{
+        background: white !important;
+    }
 
 }
 

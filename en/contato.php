@@ -31,6 +31,13 @@ if(isset($_POST["submit"])){
       
      </td>
   </tr>
+  <tr>
+    <td background-color='#ffffff' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
+      <b>Telefone: ".$_POST['phone']."</b>
+   
+      
+     </td>
+  </tr>
  <tr>
    <td background-color='#ffffff;' style='padding: 20px 10px 20px 10px; font-family: Arial, sans-serif; font-size: 14px; color: #1e227b;'>
    <b> Assunto: ".$_POST['assunto']."</b>
@@ -207,13 +214,13 @@ if(isset($_POST["submit"])){
                                                 <a class="sub-itens" href="betumat.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
                                                 <a class="sub-itens" href="jpa.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Engineering</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
+                                                <a class="sub-itens" href="oxiteno.html" 
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
                                         </div>
 
                                 </li>
-                                <li class="nav-item">
-                                        <a class="nav-link" href="afiliados.html">Partners</a>
-                                </li>
+                            
                                 <li class="nav-item">
                                         <a class="nav-link" href="contato.php">Contact</a>
                                 </li>
@@ -249,7 +256,7 @@ if(isset($_POST["submit"])){
 
                 <div class="title-page">
                         <picture class="image-title">
-                                <img src="img/contact.jpg" class="img-fluid-serv" alt="...">
+                                <img src="../img/contact.jpg" class="img-fluid-serv" alt="...">
                         </picture>
                                 <div class="container">
                                         <h1 class="page-title">CONTACT</h1>
@@ -265,43 +272,6 @@ if(isset($_POST["submit"])){
         
         
         <section id="contact2">
-
-                                
-                                <div class="row-other">
-                                        <div class="contact-phone mt-5">
-
-                                               
-
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        <img src="img/icon/call.png" class="img-fluid icon" alt="">
-                                                </div>
-                                                
-                                                
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        
-                                                        <h3 class="title-contact" > Telephone</h3>
-                                                        <p>+55 71 0000-0000</p>
-                                                </div>
-        
-                
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                <img src="img/icon/email.png" class="img-fluid icon" alt="">
-                                                        </div>
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                
-                                                                <h3 class="title-contact">E-mail</h3>
-                                                                <p>rodrigo@gmail.com</p>
-                                                        </div>
-                                                                
-                                                                
-                                                                
-                                                        </div>
-
-                                                </div>
 
                 
                 <section id="contact">
@@ -357,6 +327,15 @@ if(isset($_POST["submit"])){
                                                 
                                                 
                                         </div>
+
+                                        <div class="contato-title"> 
+                                                
+                                                
+                                                
+                                                <input type="tel" required="required" placeholder="Telephone*" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" class="form-control form-controle" />
+                                                        
+                                                        
+                                        </div>
                                         
                                         
                                         <!-- <label for="input-4">Assunto*</label> -->
@@ -397,120 +376,139 @@ if(isset($_POST["submit"])){
                         </div>  
 
                 </section>
-                        <div class="others">
-                                <div class="col">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                                        
-                                </div>
-                        </div>
 
 
-                        <footer class="pt-4 text-center">
-                <div class="row">
+<footer class="pt-4 text-center">
+        <div class="row">
 
-                        <div class="col-md-3 mt-md-3 mt-3">
-                                <h5 class="text-uppercase">LM ENGINEERING</h5>
+                <div class="col-md-3 mt-md-3 mt-3">
+                        <h5 class="text-uppercase">LM ENGENHARIA</h5>
+                        <br>
+                        <ul class="list-unstyled">
+                                <li>
+                                        <a href="history.html" class="a-footer">Our story</a>
+                                </li>
                                 <br>
-                                <ul class="list-unstyled">
-                                        <li>
-                                                <a href="history.html" class="a-footer">Our story</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="corporativo.html" class="a-footer">Corporate</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="compliance.html" class="a-footer">Compliance, Ethics and Transparency</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="politica.html" class="a-footer">Management Policy</a>
-                                        </li>
-                                        <br>
-                                           <li>
-                                                <a href="seguranca.html" class="a-footer">Security</a>
-                                        </li>
-                                </ul>
+                                <li>
+                                        <a href="corporativo.html" class="a-footer">Corporate</a>
+                                </li>
                                 <br>
-                        </div>
-                        <div class="col-md-2 mt-md-3">
-
-                                <h5 class="text-uppercase"><a href="about.html" class="a-footer">Services</a></h5>
+                                <li>
+                                        <a href="compliance.html" class="a-footer">Compliance, Ethics and
+                                                Transparency</a>
+                                </li>
                                 <br>
-                                <ul class="list-unstyled">
-                                        <li>
-                                                <a href="orcamento.php" class="a-footer">Budget</a>
-                                        </li>
-                                </ul>
+                                <li>
+                                        <a href="politica.html" class="a-footer">Management Policy</a>
+                                </li>
                                 <br>
+                                <li>
+                                    <a href="seguranca.html" class="a-footer">Security</a>
+                                </li>
+                        </ul>
+                        <br>
+                </div>
+                <div class="col-md-2 mt-md-3">
 
-
-                                <a href="../es/contato.php">
-
-                                        <img src="../img/icon/es.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
-                        </div>
-
-                        <div class="col-md-3 mt-md-3">
-                                <h5><a class="a-footer" href="contato.php">Contact</a></h5>
+                        <h5 class="text-uppercase"><a href="about.html" class="a-footer">Services</a></h5>
+                        <br>
+                        <ul class="list-unstyled">
+                                <li>
+                                        <a href="caldeiraria.html" class="a-footer">Boilermaking</a>
+                                </li>
                                 <br>
-                                <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
+                                <li>
+                                        <a href="civil.html" class="a-footer">Civil Engineering</a>
+                                </li>
                                 <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                                <li>
+                                        <a href="eletrica.html" class="a-footer">Industrial Electrical</a>
+                                </li>
                                 <br>
-                        </div>
-                        <div class="col-lg mt-md-3 ml-3">
+                                <li>
+                                        <a href="facilites.html" class="a-footer">Facilities</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="instrumentacao.html" class="a-footer">Instrumentation</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="mecanica.html" class="a-footer">Mechanics</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="valvulas.html" class="a-footer">Valves</a>
+                                </li>
+                        </ul>
+                        <br>
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                                4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
-                                        width="100%" height="200px" frameborder="0" style="border:0;"
-                                        allowfullscreen=""></iframe>
 
+                        <a href="../es/contato.php">
 
-                                <p class="text-justify">Empresarial 2000 - R. das Ubaranas, 347 - Room 501 - Amaralina,
-                                        Salvador - BA, 41900-390
-
-                                </p>
-                                <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
-                        </div>
+                                <img src="../img/icon/es.png"
+                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                        </a>
                 </div>
 
-                <br>
-        </footer>
+                <div class="col-md-3 mt-md-3">
+                        <h5><a class="a-footer" href="contato.php">Contact</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="orcamento.php">Budget</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                        <br>
+                </div>
+                <div class="col-lg mt-md-3 ml-3">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                        width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                        <p class="text-justify">Rua Miguel Calmon, 37, Edf. Belo Horizonte, Sala 607/609, Comércio, Salvador/BA, 40.015-010
+
+                        </p>
+                        <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
+                </div>
+        </div>
+
+        <br>
+</footer>
+
         <div class="footer-copyright">
                 <p class="text-copyright " style="  color: #222;">
-                        © 2020 Copyright - Praxis Empresa Júnior
+                        © 2020 Copyright - Praxis Junior Company
 
                 </p>
                 <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
 
-                        <img src="../img/icon/praxis.png" style="position: relative;max-width: 25px;">
+                        <img src="../img/icon/praxis.png" style="position: relative;max-width: 20px; bottom: .2rem;">
                 </a>
         </div>
 
+        <!-- BOOTSTRAP JS FILE -->
+        <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
     
-                <!-- BOOTSTRAP JS FILE -->
-                    <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
-                    <script>
+        <script>
+
                 var mq = window.matchMedia('(max-width: 780px)');
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
                 var icon2 = document.getElementById('in1');
 
                 if (mq.matches) {
-                        $(logo).attr('src', 'img/icon/marca2.png');
+                        $(logo).attr('src', '../img/icon/marca2.png');
                         $('.navbar-expand-lg').css("background-color", "#ffff");
-                        $(icon1).attr('src', 'img/icon/login.png');
-                        $(icon2).attr('src', 'img/icon/in.png');
+
+                        $(icon1).attr('src', '../img/icon/login.png');
+                        $(icon2).attr('src', '../img/icon/in.png');
                 }
                 else {
-                        $(logo).attr('src', 'img/icon/marca.png');
+                        $(logo).attr('src', '../img/icon/marca.png');
                         $('.navbar-expand-lg').css("background-color", "transparent");
-                        $(icon1).attr('src', 'img/icon/login2.png');
-                        $(icon2).attr('src', 'img/icon/in2.png');
+                        $(icon1).attr('src', '../img/icon/login2.png');
+                        $(icon2).attr('src', '../img/icon/in2.png');
                 }
 
         </script>
@@ -525,10 +523,13 @@ if(isset($_POST["submit"])){
 
                         else if ($(this).scrollTop() > 1) {
                                 $('.navbar-expand-lg').css("background-color", "#ffff");
+                                $('.navbar').css("padding", "0rem 1rem 0rem 1rem");
+                        
 
 
                         } else {
                                 $('.navbar-expand-lg').css("background-color", "transparent");
+                                $('.navbar').css("padding", ".5rem 1rem .5rem 1rem");
 
 
                         }
@@ -541,13 +542,13 @@ if(isset($_POST["submit"])){
                 $(window).scroll(function () {
 
                         if (mq.matches) {
-                                $(troca).attr('src', 'img/icon/marca2.png')
+                                $(troca).attr('src', '../img/icon/marca2.png')
                         }
 
                         else if ($(document).scrollTop() > 1) {
-                                $(troca).attr('src', 'img/icon/marca2.png');
+                                $(troca).attr('src', '../img/icon/marca2.png');
                         } else {
-                                $(troca).attr('src', 'img/icon/marca.png');
+                                $(troca).attr('src', '../img/icon/marca.png');
                         }
 
                 });
@@ -558,12 +559,12 @@ if(isset($_POST["submit"])){
                 var troca3 = document.getElementById('login1');
                 $(window).scroll(function () {
                         if (mq.matches) {
-                                $(troca3).attr('src', 'img/icon/login.png');
+                                $(troca3).attr('src', '../img/icon/login.png');
                         }
                         else if ($(document).scrollTop() > 1) {
-                                $(troca3).attr('src', 'img/icon/login.png');
+                                $(troca3).attr('src', '../img/icon/login.png');
                         } else {
-                                $(troca3).attr('src', 'img/icon/login2.png');
+                                $(troca3).attr('src', '../img/icon/login2.png');
                         }
                 });
         </script>
@@ -574,13 +575,13 @@ if(isset($_POST["submit"])){
                 $(window).scroll(function () {
 
                         if (mq.matches) {
-                                $(troca4).attr('src', 'img/icon/in.png');
+                                $(troca4).attr('src', '../img/icon/in.png');
                         }
 
                         else if ($(document).scrollTop() > 1) {
-                                $(troca4).attr('src', 'img/icon/in.png');
+                                $(troca4).attr('src', '../img/icon/in.png');
                         } else {
-                                $(troca4).attr('src', 'img/icon/in2.png');
+                                $(troca4).attr('src', '../img/icon/in2.png');
                         }
                 });
         </script>
@@ -598,6 +599,36 @@ if(isset($_POST["submit"])){
 
                         }
                 });
+        </script>
+
+        <script>
+
+        function funcaoClick() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var x = document.getElementById("drop");
+        if(mq.matches && x.className.indexOf("show") == -1){
+
+                        x.className += "show";
+                }
+        else {
+        x.className = x.className.replace("show", "");
+
+        }
+        }
+        </script>
+
+        <script>
+        function funcaoClick2() {
+        var mq = window.matchMedia('(max-width: 780px)');
+        var y = document.getElementById("drop2")
+        if(mq.matches && y.className.indexOf("show2") == -1){
+                
+                y.className += "show2";
+                }
+        else {
+        y.className = y.className.replace("show2", "");
+        }
+        }
         </script>
 
 
