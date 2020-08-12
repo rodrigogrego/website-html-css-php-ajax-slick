@@ -235,89 +235,112 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
 
         </section>
         <footer class="pt-4 text-center">
-                <div class="row">
-                        <div class="col-md-3 mt-md-3 mt-3">
-                                <h5 class="text-uppercase">LM INGENIERIA</h5>
+        <div class="row">
+
+                <div class="col-md-3 mt-md-3 mt-3">
+                        <h5 class="text-uppercase">LM ENGENHARIA</h5>
+                        <br>
+                        <ul class="list-unstyled">
+                                <li>
+                                        <a href="history.html" class="a-footer">Nuestra historia</a>
+                                </li>
                                 <br>
-                                <ul class="list-unstyled">
-                                        <li>
-                                                <a href="history.html" class="a-footer">Nuestra historia</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="corporativo.html" class="a-footer">Corporativo</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="compliance.html" class="a-footer">Cumplimiento, Ética y
-                                                        Transparencia</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="politica.html" class="a-footer">Política de Gerencia</a>
-                                        </li>
-                                        <br>
-                                        <li>
-                                                <a href="seguranca.html" class="a-footer">Seguridad</a>
-                                        </li>
-                                </ul>
+                                <li>
+                                        <a href="corporativo.html" class="a-footer">Corporativo</a>
+                                </li>
                                 <br>
-                        </div>
-                        <div class="col-md-2 mt-md-3">
-        
-                                <h5 class="text-uppercase"><a href="about.html" class="a-footer">Servicios</a></h5>
+                                <li>
+                                        <a href="compliance.html" class="a-footer">Conformidad, Ética y
+                                                Transparencia</a>
+                                </li>
                                 <br>
-                                <ul class="list-unstyled">
-                                        <li>
-                                                <a href="orcamento.php" class="a-footer">Presupuesto</a>
-                                        </li>
-                                </ul>
+                                <li>
+                                        <a href="politica.html" class="a-footer">Política de Gerencia</a>
+                                </li>
                                 <br>
-        
-        
-                                <a href="../ouvidoria2.php">
-        
-                                        <img src="../img/icon/br.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
-                        </div>
-        
-                        <div class="col-md-3 mt-md-3">
-                                <h5><a class="a-footer" href="contato.php">Contacto</a></h5>
-                                <br>
-                                <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
-                                <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
-                                <br>
-                        </div>
-                        <div class="col-lg mt-md-3 ml-3">
-        
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                                4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
-                                        width="100%" height="200px" frameborder="0" style="border:0;"
-                                        allowfullscreen=""></iframe>
-        
-        
-                                <p class="text-justify">Empresarial 2000 - R. das Ubaranas, 347 - Habitación 501 - Amaralina,
-                                        Salvador - BA, 41900-390
-        
-                                </p>
-                                <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
-                        </div>
+                                <li>
+                                        <a href="seguranca.html" class="a-footer">Seguridad</a>
+                                </li>
+                        </ul>
+                        <br>
                 </div>
-                <br>
-        </footer>
-        
-                <div class="footer-copyright">
-                        <p class="text-copyright " style="  color: #222;">
-                                © 2020 Copyright - Praxis Junior Company
-        
-                        </p>
-                        <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
-        
-                                <img src="../img/icon/praxis.png" style="position: relative;max-width: 25px;">
+                <div class="col-md-2 mt-md-3">
+
+                        <h5 class="text-uppercase"><a href="about.html" class="a-footer">Servicios</a></h5>
+                        <br>
+                        <ul class="list-unstyled">
+                                <li>
+                                        <a href="caldeiraria.html" class="a-footer">Calderería</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="civil.html" class="a-footer">Ingenieria Civil</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="eletrica.html" class="a-footer">Eléctrica Industrial</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="facilites.html" class="a-footer">Facilities</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="instrumentacao.html" class="a-footer">Instrumentación</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="mecanica.html" class="a-footer">Mecánica</a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="valvulas.html" class="a-footer">Valvulas</a>
+                                </li>
+                        </ul>
+                        <br>
+
+
+                        <a href="../ouvidoria2.php">
+
+                                <img src="../img/icon/br.png"
+                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
                         </a>
                 </div>
+
+                <div class="col-md-3 mt-md-3">
+                        <h5><a class="a-footer" href="contato.php">Contacto</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="orcamento.php">Presupuesto</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
+                        <br>
+                        <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
+                        <br>
+                </div>
+                <div class="col-lg mt-md-3 ml-3">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                        width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                        <p class="text-justify">Rua Miguel Calmon, 37, Edf. Belo Horizonte, Salas 607/609, Comércio, Salvador/BA, 40.015-010
+
+                        </p>
+                        <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
+                </div>
+        </div>
+
+        <br>
+</footer>
+<div class="footer-copyright">
+        <p class="text-copyright " style="  color: #222;">
+                © 2020 Copyright - Praxis Júnior Company
+
+        </p>
+        <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
+
+                <img src="../img/icon/praxis.png" style="position: relative;max-width: 20px; bottom: .2rem;">
+        </a>
+</div>
 
         <!-- BOOTSTRAP JS FILE -->
         <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>

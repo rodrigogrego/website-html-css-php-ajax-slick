@@ -156,7 +156,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                         <a class="sub-itens" href="instrumentacao.html"
                                                 style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Instrumentación</a>
                                         <a class="sub-itens" href="civil.html"
-                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Ingeniero civil</a>
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Ingenieria civil</a>
                                         <a class="sub-itens" href="caldeiraria.html"
                                                 style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Calderería</a>
                                         <a class="sub-itens" href="valvulas.html"
@@ -182,13 +182,13 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                         <a class="sub-itens" href="betumat.html"
                                                 style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
                                         <a class="sub-itens" href="jpa.html"
-                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">JPA Ingenieria</a>
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
+                                        <a class="sub-itens" href="oxiteno.html"
+                                                style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
                                 </div>
         
                         </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="afiliados.html">Socios</a>
-                        </li>
+                    
                         <li class="nav-item">
                                 <a class="nav-link" href="contato.php">Contacto</a>
                         </li>
@@ -304,20 +304,12 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
             </div>
 
         </section>
-        <div class="others">
-            <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                        4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
-                    width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-            </div>
-        </div>
 
         <footer class="pt-4 text-center">
                 <div class="row">
+        
                         <div class="col-md-3 mt-md-3 mt-3">
-                                <h5 class="text-uppercase">LM INGENIERIA</h5>
+                                <h5 class="text-uppercase">LM ENGENHARIA</h5>
                                 <br>
                                 <ul class="list-unstyled">
                                         <li>
@@ -329,7 +321,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                         </li>
                                         <br>
                                         <li>
-                                                <a href="compliance.html" class="a-footer">Cumplimiento, Ética y
+                                                <a href="compliance.html" class="a-footer">Conformidad, Ética y
                                                         Transparencia</a>
                                         </li>
                                         <br>
@@ -349,7 +341,31 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                 <br>
                                 <ul class="list-unstyled">
                                         <li>
-                                                <a href="orcamento.php" class="a-footer">Presupuesto</a>
+                                                <a href="caldeiraria.html" class="a-footer">Calderería</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="civil.html" class="a-footer">Ingenieria Civil</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="eletrica.html" class="a-footer">Eléctrica Industrial</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="facilites.html" class="a-footer">Facilities</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="instrumentacao.html" class="a-footer">Instrumentación</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="mecanica.html" class="a-footer">Mecánica</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="valvulas.html" class="a-footer">Valvulas</a>
                                         </li>
                                 </ul>
                                 <br>
@@ -365,6 +381,8 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <div class="col-md-3 mt-md-3">
                                 <h5><a class="a-footer" href="contato.php">Contacto</a></h5>
                                 <br>
+                                <h5><a class="a-footer" href="orcamento.php">Presupuesto</a></h5>
+                                <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
                                 <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
@@ -372,36 +390,34 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         </div>
                         <div class="col-lg mt-md-3 ml-3">
         
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.680056485697!2d-38.4668871!3d-13.0089038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94d6e7
-                                                4796044d9b!2sLM%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1577399928652!5m2!1spt-BR!2sbr"
-                                        width="100%" height="200px" frameborder="0" style="border:0;"
-                                        allowfullscreen=""></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                                width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         
-        
-                                <p class="text-justify">Empresarial 2000 - R. das Ubaranas, 347 - Habitación 501 - Amaralina,
-                                        Salvador - BA, 41900-390
+                                <p class="text-justify">Rua Miguel Calmon, 37, Edf. Belo Horizonte, Salas 607/609, Comércio, Salvador/BA, 40.015-010
         
                                 </p>
                                 <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
                         </div>
                 </div>
+        
                 <br>
         </footer>
+        <div class="footer-copyright">
+                <p class="text-copyright " style="  color: #222;">
+                        © 2020 Copyright - Praxis Júnior Company
         
-                <div class="footer-copyright">
-                        <p class="text-copyright " style="  color: #222;">
-                                © 2020 Copyright - Praxis Junior Company
+                </p>
+                <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
         
-                        </p>
-                        <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
+                        <img src="../img/icon/praxis.png" style="position: relative;max-width: 20px; bottom: .2rem;">
+                </a>
+        </div>
         
-                                <img src="../img/icon/praxis.png" style="position: relative;max-width: 25px;">
-                        </a>
-                </div>
-
         <!-- BOOTSTRAP JS FILE -->
         <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
+        
         <script>
+        
                 var mq = window.matchMedia('(max-width: 780px)');
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
@@ -410,6 +426,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                 if (mq.matches) {
                         $(logo).attr('src', '../img/icon/marca2.png');
                         $('.navbar-expand-lg').css("background-color", "#ffff");
+        
                         $(icon1).attr('src', '../img/icon/login.png');
                         $(icon2).attr('src', '../img/icon/in.png');
                 }
@@ -432,10 +449,13 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
         
                         else if ($(this).scrollTop() > 1) {
                                 $('.navbar-expand-lg').css("background-color", "#ffff");
+                                $('.navbar').css("padding", "0rem 1rem 0rem 1rem");
+                               
         
         
                         } else {
                                 $('.navbar-expand-lg').css("background-color", "transparent");
+                                $('.navbar').css("padding", ".5rem 1rem .5rem 1rem");
         
         
                         }
@@ -512,14 +532,14 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
         function funcaoClick() {
         var mq = window.matchMedia('(max-width: 780px)');
         var x = document.getElementById("drop");
-            if(mq.matches && x.className.indexOf("show") == -1){
+          if(mq.matches && x.className.indexOf("show") == -1){
         
-                            x.className += "show";
+                          x.className += "show";
                 }
-            else {
+           else {
             x.className = x.className.replace("show", "");
         
-            }
+          }
         }
         </script>
         
@@ -527,15 +547,16 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
         function funcaoClick2() {
         var mq = window.matchMedia('(max-width: 780px)');
         var y = document.getElementById("drop2")
-            if(mq.matches && y.className.indexOf("show2") == -1){
-                    
+          if(mq.matches && y.className.indexOf("show2") == -1){
+                 
                 y.className += "show2";
                 }
-            else {
+           else {
             y.className = y.className.replace("show2", "");
-            }
+          }
         }
         </script>
+
 
 
 
