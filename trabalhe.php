@@ -294,7 +294,10 @@ if(isset($_POST["submit"])){
 
 
         <div class="intro-job justify-content-center">
-                <h3>SUBTITULO</h3>
+                <h3>Seja bem-vindo!</h3>
+                <p> Estamos sempre em busca de profissionais nas mais diversas disciplinas da 
+                        Engenharia. Se você deseja fazer parte da nossa equipe, preencha o formulário abaixo e anexe o seu currículo:
+                </p>
         </div>
 
 
@@ -309,7 +312,7 @@ if(isset($_POST["submit"])){
                                 <div class="container-contact">
                                         <div class="border-contact">
 
-                                                <h3 class="title-contact">Junte-se a nós</h3>
+                                                <h3 class="title-contact">Faça parte de um time de excelência</h3>
                                         </div>
 
                                 </div>

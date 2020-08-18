@@ -127,7 +127,7 @@ if(isset($_POST["submit"])){
 
                     <!-- NAVBAR AREA -->
                     <nav class="navbar navbar-expand-lg fixed-top">
-                <a class="navbar-brand" href="/en/index.html">
+                <a class="navbar-brand" href="index.html">
                 <img src="../img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"

@@ -193,7 +193,7 @@ if(isset($_POST["submit"])){
                                                 <a class="sub-itens" href="valvulas.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Válvulas</a>
                                                 <a class="sub-itens" href="facilites.html"
-                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilites</a>
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilities</a>
                                         </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -334,10 +334,11 @@ if(isset($_POST["submit"])){
                                         <div class="contato-title">                                                
                                                 <select name="area" class="form-control form-controle" required>
                                                         <option value="">Área de Interesse*</option>
-                                                        <option value="1">2</option>
-                                                        <option value="2">3</option>
-                                                        <option value="3">4</option>
-                                                        <option value="4">5</option>
+                                                        <option value="Administrativo">Administrativo</option>
+                                                        <option value="Comercial">Comercial</option>
+                                                        <option value="Financeiro">Financeiro</option>
+                                                        <option value="RH">RH</option>
+                                                        <option value="Suprimentos">Suprimentos</option>
                                                 </select>
                                                 <br>
                                                 
@@ -462,7 +463,7 @@ if(isset($_POST["submit"])){
                                         </li>
                                         <br>
                                         <li>
-                                                <a href="facilites.html" class="a-footer">Facilites</a>
+                                                <a href="facilites.html" class="a-footer">Facilities</a>
                                         </li>
                                         <br>
                                         <li>
@@ -480,11 +481,29 @@ if(isset($_POST["submit"])){
                                 <br>
 
 
-                                <a href="en/contato.php">
-
-                                        <img src="img/icon/uk.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
+                                <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="contato.php" class="lang">
+                                                
+                                                <img src="img/icon/br.png"
+                                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; filter:none" >
+                                        </a>
+                                        <a href="en/contato.php" class="lang">
+                                                
+                                                <img src="img/icon/uk.png"
+                                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; ">
+                                        </a>
+                                        <a href="es/contato.php" class="lang">
+                                                
+                                                <img src="img/icon/es.png"
+                                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                                        </a>
+                
+                
+                
+                                                <!-- <img src="img/icon/iso.png"
+                                                style="position: fixed;max-width: 105px; bottom: 20px;right: 20px; "> -->
+                                <!--  -->
                         </div>
 
                         <div class="col-md-3 mt-md-3">
