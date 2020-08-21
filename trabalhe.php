@@ -293,19 +293,25 @@ if(isset($_POST["submit"])){
 
 
 
-        <div class="intro-job justify-content-center">
-                <h3>Seja bem-vindo!</h3>
-                <p> Estamos sempre em busca de profissionais nas mais diversas disciplinas da 
-                        Engenharia. Se você deseja fazer parte da nossa equipe, preencha o formulário abaixo e anexe o seu currículo:
-                </p>
+        <div class="intro-job justify-content-center" >
+                <div class="sub-title">        
+                        <h3 style="color:#1e227b; font-weight: bolder;">Seja bem-vindo!</h3>
+                        <br>
+                        <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;"> Estamos sempre em busca de profissionais nas mais diversas disciplinas da 
+                                Engenharia. </p>
+                                <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;">Se você deseja fazer parte da nossa equipe, 
+                                preencha o formulário abaixo e anexe o seu currículo:
+                                </p>
+                </div>
+               
         </div>
 
 
         <section id="contact">
 
-
+                
                 <div class="contato-form">
-
+                        
 
                         <div class="page-contact">
 
@@ -334,7 +340,7 @@ if(isset($_POST["submit"])){
                                         
                                         <select name="area" class="form-control form-controle" required>
                                                 <option value="">Vaga de Interesse*</option>
-                                                <option value="1">2</option>
+                                                <option value="">2</option>
                                                 <option value="2">3</option>
                                                 <option value="3">4</option>
                                                 <option value="4">5</option>
@@ -384,6 +390,38 @@ if(isset($_POST["submit"])){
 
                         </form>
 
+                </div>
+
+                        
+                </div>
+                <div class="sidebar">
+                        
+                        <div class="page-contact">
+                                
+                                <div class="border-contact">
+
+                                        <h3 class="title-contact pb-2"> Painel de vagas</h3>        
+                                        
+                                </div>
+                        </div>
+                                
+                                <button class="dropdown-btn mb-3" id="btn-vagas" onclick="trocarBtn()">Vaga (Técnico Instrumentação)
+                                        <p id="btn" style="font-size: 20px;">+</p>
+                                </button>
+
+                        <div class="dropdown-container mb-3" id="vagas">
+                                <li>Localidade</li>
+                                <li> Função</li>
+                                <li> Grau instrução</li>
+                                <li> Descrição</li>
+                                <li> Experiência</li>
+                        </div>
+
+                     
+
+                        
+
+                        
                 </div>
 
         </section>
@@ -506,6 +544,9 @@ if(isset($_POST["submit"])){
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
                 var icon2 = document.getElementById('in1');
+                var teste = document.getElementById('btn');
+                var cont = 0;
+
 
                 if (mq.matches) {
                         $(logo).attr('src', 'img/icon/marca2.png');
@@ -520,6 +561,21 @@ if(isset($_POST["submit"])){
                         $(icon1).attr('src', 'img/icon/login2.png');
                         $(icon2).attr('src', 'img/icon/in2.png');
                 }
+
+                $(document).ready(function(){
+                $("#btn-vagas").click(function(){
+                $("#vagas").slideToggle("slow");
+                if(cont == 0){
+
+                        $("#btn").html("-");
+                        cont = 1;
+                }else{
+                        $("#btn").html("+");
+                        cont = 0;
+                }
+                });
+                });
+
 
         </script>
 

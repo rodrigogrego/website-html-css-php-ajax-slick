@@ -333,6 +333,15 @@ if(isset($_POST["submit"])){
 
                                         </form>
 
+
+                        <div class="container">
+                                <div class="sidebar">
+                                        <button class="dropdown-btn">
+                                                <p id="btn-drop">+</p>
+                                        </button>
+                                </div>
+                        </div>
+
         <footer class="pt-4 text-center">
                 <div class="row">
         
