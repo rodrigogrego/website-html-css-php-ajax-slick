@@ -220,7 +220,7 @@ if(isset($_POST["submit"])){
                                                 <a class="sub-itens" href="facilites.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; 
                                                         border-bottom-width: 1px;">
-                                                        Facilites
+                                                        Facilities
                                                 </a>
                                         </div>
                                 </li>
@@ -475,7 +475,7 @@ if(isset($_POST["submit"])){
                                         </li>
                                         <br>
                                         <li>
-                                                <a href="facilites.html" class="a-footer">Facilites</a>
+                                                <a href="facilites.html" class="a-footer">Facilities</a>
                                         </li>
                                         <br>
                                         <li>

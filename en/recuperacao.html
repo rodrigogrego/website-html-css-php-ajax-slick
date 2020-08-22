@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="(max-width: 800px)" href="../css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+        <link rel="icon" href="../img/icon/icon.png">
+      <title>Recovery Boiler</title>
+</head>
+<body>
+        <!-- NAVBAR AREA -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="index.html">
+                        <img src="../img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                                <li class="nav-item dropdown ">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" onclick="funcaoClick()">About Us</a>
+                                        <div class="sub-item" id="drop">
+                                                <a class="sub-itens" href="history.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                         Our story</a>
+                                                <a class="sub-itens" href="corporativo.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Corporate
+                                                </a>
+                                                <a class="sub-itens" href="politica.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Management Policy</a>
+                                                <a class="sub-itens" href="compliance.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                                Compliance,
+                                                                Ethics and Transparency</a> 
+                                                        <a class="sub-itens" href="seguranca.html"
+                                                        style=" font-size: 16px ; border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">
+                                                        Security
+                                                </a> 
+                                                </div>
+                
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="about.html"
+                                                id="navbarDropdownMenuLink">Services </a>
+                                        <div class="sub-item">
+                                                <a class="sub-itens" href="eletrica.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;"> Industrial Electrical</a>
+                                                <a class="sub-itens" href="mecanica.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Mechanics</a>
+                                                <a class="sub-itens" href="instrumentacao.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Instrumentation</a>
+                                                <a class="sub-itens" href="civil.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Civil Engineering</a>
+                                                <a class="sub-itens" href="caldeiraria.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Boilermaking</a>
+                                                <a class="sub-itens" href="valvulas.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Valves</a>
+                                                <a class="sub-itens" href="facilites.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px;">Facilities</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" onclick="funcaoClick2()" >Portfolio</a>
+                                        <div class="sub-item" id="drop2">
+                                                <a class="sub-itens" href="cenpes.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Cenpes</a>
+                                                <a class="sub-itens" href="sergipe.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Sergipe</a>
+                                                <a class="sub-itens" href="roque.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">São
+                                                        Roque</a>
+                                                <a class="sub-itens" href="knauf.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Knauf</a>
+                                                <a class="sub-itens" href="betumat.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Betumat</a>
+                                                <a class="sub-itens" href="jpa.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
+                                                <a class="sub-itens" href="oxiteno.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
+                                                <a class="sub-itens" href="recuperacao.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Recovery Boiler</a>
+                                        </div>
+                
+                                </li>
+                               
+                                <li class="nav-item">
+                                        <a class="nav-link" href="contato.php">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="trabalhe.php">Work with us</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="orcamento.php">Budget</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                                </li>
+                                <div class="icons-nav">
+                
+                                        <li class="nav-item">
+                                                <a class="nav-link">
+                                                        <img src="../img/icon/in2.png" height="25px" width="25px"id='in1'>
+                                                </a>
+                                        </li>
+                
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="login.php">
+                                                        <img src="../img/icon/login2.png" height="25px" width="25px"id='login1'>
+                                                </a>
+                                        </li>
+                
+                                </div>
+                        </ul>
+                </div>
+        </nav>
+        <!-- END NAVBAR AREA -->
+
+        <div class = "title-portfolio">
+            <picture class = "image-title">
+                     <img src = "../img/portfolio2.png" class = "img-fluid-serv img-portfolio" alt = "...">
+            </picture>
+                    <div class = "container">
+                            <h1 class = "page-portfolio"> RECOVERY BOILER </h1>
+
+                    </div>
+    </div>
+    
+    <div class = "main">
+
+           <div class="row-main-portfolio">
+
+            <div class = "col-md-10 centro mt-5 mb-4">
+                    <div id ="area-index">
+                            <div class = "video-base">
+                                    <div id = "video-portfolio">
+                                            <video preload = "metadata" autoplay loop muted id = "video-height">
+                                                    <source src = "../video/video2.mp4" type = "video/mp4">
+    
+                                            </video>
+    
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+    
+            <div class = "col-md-10 mt-5 cad centro">
+                <div class = "text-main">
+                        
+                        <h3 class = "title-main"> Recovery Boiler </h3>
+                        <br>
+                    <p style = "color: #1e227b; font-weight: bold;">
+                        Construction services and electromechanical assembly of Recovery Boiler MD / FH-60 - 60 (65) kgf / cm²g / 450ºC / P.P. 78 kgf / cm²g
+                    </p>
+                    <br>
+                    <ul class = "list-portfolio">
+   
+                            <li class = "item-list">
+                                    CONSTRUCTION AND ASSEMBLY OF THE BOILER SUPPORT METAL STRUCTURE;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    MOUNTING THE BOILER BLOCKS;
+                            </li>
+
+                            <li class = "item-list mt-3">
+                                    PIPE ASSEMBLY;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    MOUNTING THE STEAM DRUM;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    ASSEMBLY OF BUCKSTAYS, DOWNCOMERS AND RISERS;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    ASSEMBLY OF GASES;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    ASSEMBLY OF FANS, FANS AND FANS;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    ASSEMBLY OF PUMPS AND DRAINAGE SYSTEMS;
+                            </li>
+                            <li class = "item-list mt-3">
+                                    REFRACTORY.
+                            </li>
+                    </ul>
+
+                        </div>
+                                    
+                    </div>
+            </div>
+                                
+        <footer class="pt-4 text-center">
+                <div class="row">
+        
+                        <div class="col-md-3 mt-md-3 mt-3">
+                                <h5 class="text-uppercase">LM ENGENHARIA</h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                        <li>
+                                                <a href="history.html" class="a-footer">Our story</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="corporativo.html" class="a-footer">Corporate</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="compliance.html" class="a-footer">Compliance, Ethics and
+                                                        Transparency</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="politica.html" class="a-footer">Management Policy</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <a href="seguranca.html" class="a-footer">Security</a>
+                                        </li>
+                                </ul>
+                                <br>
+                        </div>
+                        <div class="col-md-2 mt-md-3">
+        
+                                <h5 class="text-uppercase"><a href="about.html" class="a-footer">Services</a></h5>
+                                <br>
+                                <ul class="list-unstyled">
+                                        <li>
+                                                <a href="caldeiraria.html" class="a-footer">Boilermaking</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="civil.html" class="a-footer">Civil Engineering</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="eletrica.html" class="a-footer">Industrial Electrical</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="facilites.html" class="a-footer">Facilities</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="instrumentacao.html" class="a-footer">Instrumentation</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="mecanica.html" class="a-footer">Mechanics</a>
+                                        </li>
+                                        <br>
+                                        <li>
+                                                <a href="valvulas.html" class="a-footer">Valves</a>
+                                        </li>
+                                </ul>
+                                <br>
+        
+        
+                                <a href="../es/oxiteno.html">
+        
+                                        <img src="../img/icon/es.png"
+                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                                </a>
+                        </div>
+        
+                        <div class="col-md-3 mt-md-3">
+                                <h5><a class="a-footer" href="contato.php">Contact</a></h5>
+                                <br>
+                                <h5><a class="a-footer" href="orcamento.php">Budget</a></h5>
+                                <br>
+                                <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
+                                <br>
+                                <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                                <br>
+                        </div>
+                        <div class="col-lg mt-md-3 ml-3">
+        
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9982939332035!2d-38.5153704845872!3d-12.971960663332494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96ddc6!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Belo%20Horizonte!5e0!3m2!1spt-BR!2sbr!4v1596405226309!5m2!1spt-BR!2sbr" 
+                                width="100%" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+                                <p class="text-justify">Rua Miguel Calmon, 37, Edf. Belo Horizonte, Sala 607/609, Comércio, Salvador/BA, 40.015-010
+        
+                                </p>
+                                <p class="text-justify"> Tel: 55 71 3021-0693 / 3130-4995</p>
+                        </div>
+                </div>
+        
+                <br>
+        </footer>
+        
+                <div class="footer-copyright">
+                        <p class="text-copyright " style="  color: #222;">
+                                © 2020 Copyright - Praxis Junior Company
+        
+                        </p>
+                        <a href="http://www.praxisjr.com.br" alt="http://www.praxisjr.com.br">
+        
+                                <img src="../img/icon/praxis.png" style="position: relative;max-width: 20px; bottom: .2rem;">
+                        </a>
+                </div>
+        
+                <!-- BOOTSTRAP JS FILE -->
+                <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
+            
+                <script>
+        
+                        var mq = window.matchMedia('(max-width: 780px)');
+                        var logo = document.getElementById('img1');
+                        var icon1 = document.getElementById('login1');
+                        var icon2 = document.getElementById('in1');
+        
+                        if (mq.matches) {
+                                $(logo).attr('src', '../img/icon/marca2.png');
+                                $('.navbar-expand-lg').css("background-color", "#ffff");
+        
+                                $(icon1).attr('src', '../img/icon/login.png');
+                                $(icon2).attr('src', '../img/icon/in.png');
+                        }
+                        else {
+                                $(logo).attr('src', '../img/icon/marca.png');
+                                $('.navbar-expand-lg').css("background-color", "transparent");
+                                $(icon1).attr('src', '../img/icon/login2.png');
+                                $(icon2).attr('src', '../img/icon/in2.png');
+                        }
+        
+                </script>
+        
+                <script>
+                        var mq = window.matchMedia('(max-width: 780px)');
+                        $(window).scroll(function () {
+        
+                                if (mq.matches) {
+                                        $('.navbar-expand-lg').css("background-color", "#ffff");
+                                }
+        
+                                else if ($(this).scrollTop() > 1) {
+                                        $('.navbar-expand-lg').css("background-color", "#ffff");
+                                        $('.navbar').css("padding", "0rem 1rem 0rem 1rem");
+                                
+        
+        
+                                } else {
+                                        $('.navbar-expand-lg').css("background-color", "transparent");
+                                        $('.navbar').css("padding", ".5rem 1rem .5rem 1rem");
+        
+        
+                                }
+                        });
+                </script>
+                <!-- SCRIPT JQUERY PARA TROCAR DE IMAGEM  -->
+                <script>
+                        var mq = window.matchMedia('(max-width: 780px)');
+                        var troca = document.getElementById('img1');
+                        $(window).scroll(function () {
+        
+                                if (mq.matches) {
+                                        $(troca).attr('src', '../img/icon/marca2.png')
+                                }
+        
+                                else if ($(document).scrollTop() > 1) {
+                                        $(troca).attr('src', '../img/icon/marca2.png');
+                                } else {
+                                        $(troca).attr('src', '../img/icon/marca.png');
+                                }
+        
+                        });
+                </script>
+        
+                <script>
+                        var mq = window.matchMedia('(max-width: 780px)');
+                        var troca3 = document.getElementById('login1');
+                        $(window).scroll(function () {
+                                if (mq.matches) {
+                                        $(troca3).attr('src', '../img/icon/login.png');
+                                }
+                                else if ($(document).scrollTop() > 1) {
+                                        $(troca3).attr('src', '../img/icon/login.png');
+                                } else {
+                                        $(troca3).attr('src', '../img/icon/login2.png');
+                                }
+                        });
+                </script>
+        
+                <script>
+                        var mq = window.matchMedia('(max-width: 780px)');
+                        var troca4 = document.getElementById('in1');
+                        $(window).scroll(function () {
+        
+                                if (mq.matches) {
+                                        $(troca4).attr('src', '../img/icon/in.png');
+                                }
+        
+                                else if ($(document).scrollTop() > 1) {
+                                        $(troca4).attr('src', '../img/icon/in.png');
+                                } else {
+                                        $(troca4).attr('src', '../img/icon/in2.png');
+                                }
+                        });
+                </script>
+        
+                <script>
+        
+        
+                        $(window).scroll(function () {
+        
+                                if ($(this).scrollTop() > 1) {
+                                        $('.nav-item .nav-link').css("color", "#1e227b");
+        
+                                } else {
+                                        $('.nav-item .nav-link').css("color", "#ffffff");
+        
+                                }
+                        });
+                </script>
+        
+                <script>
+        
+                function funcaoClick() {
+                var mq = window.matchMedia('(max-width: 780px)');
+                var x = document.getElementById("drop");
+                if(mq.matches && x.className.indexOf("show") == -1){
+        
+                                x.className += "show";
+                        }
+                else {
+                x.className = x.className.replace("show", "");
+        
+                }
+                }
+                </script>
+        
+                <script>
+                function funcaoClick2() {
+                var mq = window.matchMedia('(max-width: 780px)');
+                var y = document.getElementById("drop2")
+                if(mq.matches && y.className.indexOf("show2") == -1){
+                        
+                        y.className += "show2";
+                        }
+                else {
+                y.className = y.className.replace("show2", "");
+                }
+                }
+                </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="../css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+        
+</body>
+</html>

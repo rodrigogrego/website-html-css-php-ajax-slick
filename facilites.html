@@ -129,7 +129,9 @@
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
                                                 <a class="sub-itens" href="oxiteno.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
-                                        </div>
+                                                        <a class="sub-itens" href="recuperacao.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Caldeiraria de recuperação</a>
+                                                </div>
 
                                 </li>
                              
@@ -215,56 +217,111 @@
 
                 <div class="row-main">
  
-                 <div class="col-md-10 centro mt-5 mb-4">
-                    <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                    <li data-target="service-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="service-carousel" data-slide-to="1"></li>
-                            </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/facilites.jpg" alt="Primeiro Slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="img/facilites2.jpg" alt="Segundo Slide">
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                        <div class="col-md-10 centro mt-5 mb-4">
+                                <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                                <li data-target="service-carousel" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="service-carousel" data-slide-to="1" >
+                                            </li>
+                                            <li data-target="service-carousel" data-slide-to="2" >
+                                        </li>
+                                        <li data-target="service-carousel" data-slide-to="3" >
+                                        </li>
+                                        </ol>
+                                    <div class="carousel-inner c-portfolio">
+                                      <div class="carousel-item active" >
+                                        <img id="myImg" onclick="openModal();currentSlide(1)" class="d-block w-100 " src="img/serv/facilities1.jpg" alt="Primeiro Slide">
+                                      </div>
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(2)" class="d-block w-100" src="img/serv/facilities2.jpg" alt="Segundo Slide">
+                                      </div>
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(3)" class="d-block w-100" src="img/serv/facilities3.jpg" alt="Terceiro Slide">
+                                      </div>
+
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(3)" class="d-block w-100" src="img/serv/facilities4.jpg" alt="Terceiro Slide">
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+            
+                            <!-- MODAL -->
+            
+                            <div id="myModal" class="modal">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div class="modal-content">
+                                  
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">1 / 4</div>
+                                        <img src="img/serv/facilities1.jpg" style="width:100%">
+                                      </div>
+                                  
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="img/serv/facilities2.jpg" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="img/serv/facilities3.jpg" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">4 / 4</div>
+                                        <img src="img/serv/facilities4.jpg" style="width:100%">
+                                      </div>
+                                  
+                                   
+                                      
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  
+                                  
+                                  
+                                  
+                                    </div>
+                                  </div>
+            
+            
+            
+                            <!--  -->
                 <div class="col-md-10 mt-5 centro cad">
                     <div class="text-main pb-5">
                                 <h3 class="title-main">Terceirização de mão de obra para:</h3>
 
                                 <br>
 
-                        <ul>
+                        <ul class="list-portfolio">
 
-                                <li>
+                                <li class="item-list">
                                                 
                                                 Higienização e limpeza;
                                  </li>
                                 <br>
-                                 <li>
+                                 <li class="item-list">
                                  Mudança de Layout;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Conservação;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Jardinagem;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Ar condicionado;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Hidráulica;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Elétrica.
                                 </li>
                         </ul>
@@ -275,29 +332,29 @@
                                 
                                 <br>
   
-                        <ul>
+                        <ul class="list-portfolio">
 
-                                        <li>
+                                        <li class="item-list">
                                         Portaria;                    
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Recepção;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                 Telefonia;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Mensageiro;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Compra e estoque;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Outros.
                                 </li>
                         </ul>
@@ -581,6 +638,45 @@
           }
         }
         </script>
+
+<script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+</script>
 
 
 

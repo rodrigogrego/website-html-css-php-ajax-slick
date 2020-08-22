@@ -10,8 +10,16 @@
     font-size: 14px;
     padding: 0;
     margin: 0;
-    background-image: url('../img/textura2.jpg');
   }
+
+  .lang img{
+    filter:grayscale(100%);
+}
+
+.lang img:hover{
+    filter:none;
+
+}
 
   ::-webkit-scrollbar {
     width:7px;
@@ -49,6 +57,8 @@ background:#c8d0d8;
     -webkit-box-direction: normal;
             flex-direction: column;
             padding-top: 20px;
+    background-image: url('../img/textura2.jpg');
+    z-index: 1;
   }
   
   .title {
@@ -130,7 +140,7 @@ background:#c8d0d8;
     overflow: hidden;
     background-repeat: no-repeat;
     outline: none;
-    background-size: auto 400px, cover;
+    background-size: 100%;
     background-position: top;
     margin: 0 24px;
     width: 80%;
@@ -146,11 +156,11 @@ background:#c8d0d8;
   
   }
   .timeline-slide__content {
-    z-index: 5;
+    z-index: 4;
     position: absolute;
-    top: 220px;
+    bottom: -20px;
     background: #ffffff;
-    width: 80% !important;
+    width: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, 0px);
             transform: translate(-50%, 0px);
@@ -163,9 +173,11 @@ background:#c8d0d8;
       align-items: center;
       justify-content: center;
   }
-  @media (max-width: 500px) {
+  @media (min-width:320px) and (max-width: 740px) {
     .timeline-slide__content {
-      width: 100%;
+      width: 92%;
+      display:grid;
+
     }
   }
   .timeline-year {
@@ -191,7 +203,8 @@ background:#c8d0d8;
   .timeline-text {
     font-size: 15px;
     line-height: 25px;
-    color: black;
+    font-weight: bolder;
+    color: #0e8cb3;
     text-align: justify;
     
   }

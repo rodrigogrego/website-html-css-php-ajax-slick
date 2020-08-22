@@ -285,7 +285,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                                         </li>
                                         <br>
                                         <li>
-                                                <a href="facilites.html" class="a-footer">Facilites</a>
+                                                <a href="facilites.html" class="a-footer">Faciliites</a>
                                         </li>
                                         <br>
                                         <li>

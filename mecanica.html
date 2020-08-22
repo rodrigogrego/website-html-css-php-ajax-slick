@@ -129,7 +129,9 @@
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Brasilgás - Ultragaz</a>
                                                 <a class="sub-itens" href="oxiteno.html"
                                                         style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Oxiteno</a>
-                                        </div>
+                                                        <a class="sub-itens" href="recuperacao.html"
+                                                        style=" font-size: 16px ;border-bottom: 1px solid #1e227b ; border-bottom-width: 1px; ">Caldeiraria de recuperação</a>
+                                                </div>
                                 </li>
                         
                                 <li class="nav-item">
@@ -206,7 +208,7 @@
                 </div>
     
                 <div class="col-sm-auto">
-                    <a href="facilites.html" class="title-icon">Facilites</a>
+                    <a href="facilites.html" class="title-icon">Facilities</a>
                 </div>
     
             </div>
@@ -215,90 +217,138 @@
 
                 <div class="row-main">
  
-                 <div class="col-md-10 centro mt-5 mb-4">
-                        <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                        <li data-target="service-carousel" data-slide-to="0" class="active">
+                        <div class="col-md-10 centro mt-5 mb-4">
+                                <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                                <li data-target="service-carousel" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="service-carousel" data-slide-to="1" >
+                                            </li>
+                                            <li data-target="service-carousel" data-slide-to="2" >
                                         </li>
-                                        <li data-target="service-carousel" data-slide-to="1" >
-                                        </li>
-                                        <li data-target="service-carousel" data-slide-to="2" >
-                                        </li>
-                                </ol>
-                                <div class="carousel-inner c-portfolio">
-                                  <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/serv/mecanica.JPG" alt="Primeiro Slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/serv/mecanica2.JPG" alt="Segundo Slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                        <img class="d-block w-100" src="img/serv/mecanica3.JPG" alt="Segundo Slide">
+                                        </ol>
+                                    <div class="carousel-inner c-portfolio">
+                                      <div class="carousel-item active" >
+                                        <img id="myImg" onclick="openModal();currentSlide(1)" class="d-block w-100 " src="img/serv/mecanica.JPG" alt="Primeiro Slide">
                                       </div>
-                                </div>
-                        </div>
-                </div>
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(2)" class="d-block w-100" src="img/serv/mecanica2.JPG" alt="Segundo Slide">
+                                      </div>
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(2)" class="d-block w-100" src="img/serv/mecanica3.JPG" alt="Segundo Slide">
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                            </div>
+            
+                            <!-- MODAL -->
+            
+                            <div id="myModal" class="modal">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div class="modal-content">
+                                  
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">1 / 3</div>
+                                        <img src="img/serv/mecanica.JPG" style="width:100%">
+                                      </div>
+                                  
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="img/serv/mecanica2.JPG" style="width:100%">
+                                      </div>
+
+                                      <div class="mySlides c-portfolio">
+                                        <div class="numbertext">3 / 3</div>
+                                        <img src="img/serv/mecanica3.JPG" style="width:100%">
+                                      </div>
+
+                                    
+                                  
+                                   
+                                      
+                                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                  
+                                      <div class="caption-container">
+                                        <p id="caption"></p>
+                                      </div>
+                                  
+                                  
+                                    </div>
+                                  </div>
+            
+            
+            
+                            <!--  -->
                 <div class="col-md-10 mt-5 centro cad">
                     <div class="text-main">
                         <div class="clearfix pb-5">
                                 <h3 class="title-main">Mecânica</h3>
 
                                 <br>
-                                <li> 
-                                        Análise de problemas associados a rotodinâmica de equipamentos rotativos;
+                                <ul class="list-portfolio">
+
+                                <li class="item-list"> 
+                                                Análise de problemas associados a rotodinâmica de equipamentos rotativos;
                                 </li>
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Análise técnica sobre o status de turbomáquinas;
                                 </li> 
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Elaboração de plano de manutenção e sobressalentes;
                                 </li>
-                                 <br>
-                                <li>
+                                <br>
+                                <li  class="item-list">
                                         Elaboração de procedimentos e instruções técnicas de execução;
                                 </li>
                                 <br>
-                                <li> 
+                                <li  class="item-list"> 
                                         Estudo de problemas técnicos dinâmicos e equipamentos;          
                                 </li>
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Montagem de escopo de intervenção em turbomáquinas;
                                 </li> 
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Planejamento de grandes paradas ou spot em turbomáquinas.
                                 </li>
 
                                 <br>
+                        </ul>
 
                                 <h3 class="title-main mt-5">Campo</h3>
 
                                   <br>
+                        <ul class="list-portfolio">
 
-                                <li> 
+                                <li  class="item-list"> 
                                         Manutenção em turbinas a gás, a vapor de uso especial, de alta potência, para processo e/ou geração de energia;
                                 </li>
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Manutenção mecânica de geradores de Alta Potência;
                                 </li> 
                                 <br>
-                                <li>
+                                <li  class="item-list">
                                         Manutenção de compressores centrífugos e axiais;
                                 </li>
                                 <br>
-                                <li> 
-                                        Manutenção de compressores alternativos, lóbulos e parafusos;                                </li>
+                                <li  class="item-list"> 
+                                Manutenção de compressores alternativos, lóbulos e parafusos;                               
+                                  </li>
                                 <br>
-                                <li>
-                                        Manutenção de caixas de engrenagens, redutores e multiplicadores de velocidades;                                </li> 
+                                <li  class="item-list">
+                                        Manutenção de caixas de engrenagens, redutores e multiplicadores de velocidades;                              
+                                </li> 
                                 <br>
-                                <li>
-                                        Manutenção de ventiladores de FDF e IDF de fornos e caldeiras.
+                                <li  class="item-list">
+                                                Manutenção de ventiladores de FDF e IDF de fornos e caldeiras.
                                 </li>
+                        </ul>
 
 
                                         
@@ -564,6 +614,45 @@
           }
         }
         </script>
+
+<script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
