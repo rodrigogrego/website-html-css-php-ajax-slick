@@ -1,16 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Abel|Maven+Pro&display=swap');
 
-* {
-    box-sizing: border-box;
-    font-family:'Maven Pro', sans-serif; 
-  }
+
+*{
+  font-family:'Maven Pro', sans-serif !important; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
-  body {
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
 
   .lang img{
     filter:grayscale(100%);
@@ -20,6 +22,8 @@
     filter:none;
 
 }
+
+
 
   ::-webkit-scrollbar {
     width:7px;
@@ -193,18 +197,18 @@ background:#c8d0d8;
     opacity: 0;
   }
   .timeline-title {
-    color: #1e227b;
+    color: #007caa;
     font-size: 35px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: bold;
     
     
   }
   .timeline-text {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 30px;
     font-weight: bolder;
-    color: #0e8cb3;
+    color: #1e227b;
     text-align: justify;
     
   }
@@ -332,7 +336,7 @@ a.sub-itens:hover{
     display:inline-block;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px){
+@media (min-width: 1000px) and (max-width: 4000px){
   .dropdown:hover> .sub-item{
       display: block;
   }
@@ -344,11 +348,7 @@ a.sub-itens:hover{
 }
 
 
-.img-lang{
-    max-width: 20px;
-    width:100%;
 
-}
    .navbar-expand-lg{
     transition: .3s;
     background-color: white;

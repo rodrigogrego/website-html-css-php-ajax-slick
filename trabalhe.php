@@ -260,7 +260,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link" href="orcamento.php">Orçamento</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="ouvidoria.html">Ouvidoria</a>
+                                        <a class="nav-link" href="ouvidoria.html">Linha de Ética</a>
                                 </li>
                                 <div class="icons-nav">
 
@@ -392,20 +392,19 @@ if(isset($_POST["submit"])){
 
                 </div>
 
-                        
-                </div>
+
                 <div class="sidebar">
                         
                         <div class="page-contact">
                                 
-                                <div class="border-contact">
+                                <div class="border-vaga">
 
                                         <h3 class="title-contact pb-2"> Painel de vagas</h3>        
                                         
                                 </div>
                         </div>
                                 
-                                <button class="dropdown-btn mb-3" id="btn-vagas" onclick="trocarBtn()">Vaga (Técnico Instrumentação)
+                                <button class="dropdown-btn mb-3" id="btn-vagas" >Vaga (Técnico Instrumentação)
                                         <p id="btn" style="font-size: 20px;">+</p>
                                 </button>
 
@@ -493,11 +492,24 @@ if(isset($_POST["submit"])){
                                 <br>
 
 
-                                <a href="en/trabalhe.html">
+                                    <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="trabalhe.php" class="lang">
+                                                                        
+                        <img src="img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px;  filter:none" >
+                        </a>
+                        <a href="en/trabalhe.php" class="lang">
+                                
+                                <img src="img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px;  ">
+                        </a>
+                        <a href="es/trabalhe.php" class="lang">
+                                
+                                <img src="img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                        </a>
 
-                                        <img src="img/icon/uk.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
                         </div>
 
                         <div class="col-md-3 mt-md-3">
@@ -507,7 +519,7 @@ if(isset($_POST["submit"])){
                                 <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabalhe Conosco</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Ouvidoria</a></h5>
+                                <h5><a class="a-footer" href="ouvidoria.html">Linha de Ética</a></h5>
                                 <br>
                         </div>
                         <div class="col-lg mt-md-3 ml-3">

@@ -105,7 +105,7 @@
                                         <a class="nav-link" href="orcamento.php">Budget</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                                        <a class="nav-link" href="ouvidoria.html">Line of Ethics</a>
                                 </li>
                                 <div class="icons-nav">
                 
@@ -177,24 +177,60 @@
 
                 <div class="row-main">
  
-                 <div class="col-md-10 centro mt-5 mb-4">
-                        <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                        <li data-target="service-carousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="service-carousel" data-slide-to="1" ></li>
-                                        <li data-target="service-carousel" data-slide-to="2" ></li>
-                                </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="../img/portfolio/cenpes1.JPG" alt="Primeiro Slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="../img/portfolio/cenpes2.JPG" alt="Segundo Slide">
-                          </div>
-                          
+                        <div class="col-md-10 centro mt-5 mb-4">
+                                <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                                <li data-target="service-carousel" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="service-carousel" data-slide-to="1" >
+                                            </li>
+                                        </ol>
+                                    <div class="carousel-inner c-portfolio">
+                                      <div class="carousel-item active" >
+                                        <img id="myImg" onclick="openModal();currentSlide(1)" class="d-block w-100 " src="../img/portfolio/cenpes1.JPG" alt="Primeiro Slide">
+                                      </div>
+                                      <div class="carousel-item" >
+                                        <img id="myImg" onclick="openModal();currentSlide(2)" class="d-block w-100" src="../img/portfolio/cenpes2.JPG" alt="Segundo Slide">
+                                      </div>
+                                 
+                                      
+                                    </div>
+                                  </div>
                         </div>
-                      </div>
-                </div>
+        
+                           <!-- MODAL -->
+                    
+                           <div id="myModal" class="modal">
+                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
+                              
+                                  <div class="mySlides c-portfolio ">
+                                    <div class="numbertext">1 / 2</div>
+                                    <img src="../img/portfolio/cenpes1.JPG" style="width:100%">
+                                  </div>
+                              
+                                  <div class="mySlides c-portfolio ">
+                                    <div class="numbertext">2 / 2</div>
+                                    <img src="../img/portfolio/cenpes2.JPG" style="width:100%">
+                                  </div>
+        
+                              
+                               
+                                  
+                                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              
+                                  <div class="caption-container">
+                                    <p id="caption"></p>
+                                  </div>
+                              
+                              
+                                </div>
+                              </div>
+        
+        
+        
+                        <!--  -->
                 <div class="col-md-10 mt-5 centro cad">
                         <div class="text-main">
                       
@@ -202,34 +238,37 @@
 
                                 <br>
 
-                                <li>
-                                                                
+                        <ul class="list-portfolio">
+
+                                <li class="item-list">
+                                        
                                         Loop Test;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Calibration;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Routine service according to the preventive program;
                                 </li>
-                                 <br>
-                                <li>
+                                <br>
+                                <li class="item-list">
                                         Corrective;
                                 </li>
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Scheduled stops;
                                 </li> 
                                 <br>
-                                <li>
+                                <li class="item-list">
                                         Provision of labor for support and maintenance;
                                 </li>
-                                 <br>
-                                <li>
+                                <br>
+                                <li class="item-list">
                                         Automation and performance improvement in the process unit.
                                 </li>
+                        </ul>
                                  
                      
                         
@@ -306,11 +345,27 @@
                         <br>
 
 
-                        <a href="../es/instrumentacao.html">
-
-                                <img src="../img/icon/es.png"
-                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                         <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                         <a href="../instrumentacao.html" class="lang">
+                                                                        
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
+                        <a href="instrumentacao.html" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; filter:none ">
+                        </a>
+                        <a href="../es/instrumentacao.html" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                        </a>
+
+
+
+                           <!--  -->
                 </div>
 
                 <div class="col-md-3 mt-md-3">
@@ -320,7 +375,7 @@
                         <br>
                         <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                         <br>
-                        <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                        <h5><a class="a-footer" href="ouvidoria.html">Line of Ethics</a></h5>
                         <br>
                 </div>
                 <div class="col-lg mt-md-3 ml-3">
@@ -492,6 +547,45 @@
         }
         }
         </script>
+
+<script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+</script>
 
         
 

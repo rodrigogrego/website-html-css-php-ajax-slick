@@ -1,4 +1,4 @@
-/* Import fonts from front.css file */
+
 
 @import url('https://fonts.googleapis.com/css?family=Abel|Maven+Pro&display=swap');
 
@@ -172,12 +172,6 @@ a.sub-itens:hover{
 
 }
 
-
-.img-lang{
-    max-width: 20px;
-    width:100%;
-
-}
 
 /* HOME START */
 
@@ -389,6 +383,7 @@ p{
     flex-wrap: wrap;
     margin-right: -15px;
     background: #e8e8e8;
+    padding: 3rem;
     margin-left: -15px
 }
 
@@ -597,9 +592,6 @@ main{
     .nav-item .nav-link{
         color: #1e227b !important;
     }
-    #img1{
-        background-image: url(/img/marca2);
-    }
     .img-portfolio{
         padding-top:110px;
     }
@@ -623,6 +615,10 @@ main{
         padding-left: 1px !important;
 
     }
+    .row-intro{
+        flex-direction: grid;
+        padding: 0.25rem !important;
+    }
     .title-main{
         min-inline-size: inherit !important;
     }
@@ -645,10 +641,28 @@ main{
     .img-index{
         padding: 1px !important;
     }
-    .img-ouvi img{
-        max-width: 80px;
-        max-height:40px;
+
+    .image-ouvi{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: 10 !important;
+    width: 100% !important; 
+    height: 2rem !important;
     }
+    
+    .img-ouvi img{
+        max-width: 51px;
+        max-height: 24px;
+        margin-left: 10px;
+    }
+
+    .row-ouvi{
+        flex-direction: row !important;
+        width: 100% !important;
+        display: flex !important;
+        top:-30px; ;
+        position: absolute;
+       }
     .border-ouvidoria{
         margin-bottom: -20px;
     }
@@ -665,6 +679,16 @@ main{
    .border-contact{
     padding-bottom: 110px;
    }
+   .sub-title, .sidebar{
+    width: 100% !important;
+    min-height: 1px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+   }
+   .border-vaga{
+       padding:10px;
+   }
+   
 
 }
 
@@ -1190,7 +1214,6 @@ main{
 }
 
 .connect.for{
-    margin-left: -2px;
     margin-top: -26px;
     border-bottom: none !important;
     border-left: none !important;
@@ -1611,7 +1634,7 @@ main{
     }
 
 
-    @media (min-width: 100px) and (max-width: 700px) {
+    @media (min-width: 100px) and (max-width: 720px) {
                 #contato-form, .contato-form{
 
 
@@ -1620,6 +1643,7 @@ main{
             width: 100% !important;
             margin-top: 50px;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
           
             
@@ -1749,6 +1773,13 @@ main{
         width:100%;
     }
 
+    .border-vaga{
+        border-bottom: 2px solid #c8d0d8;
+        font-weight:bolder;
+        width:100%;
+    }
+    
+
     .title-contact{
         font-weight: bold;
         font-size: 25px;
@@ -1793,7 +1824,7 @@ main{
         border: solid white;
         border-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       width: 50%;
+        width: 50%;
         background: white;
     }
 
@@ -1971,13 +2002,7 @@ main{
 
 
 /* REALIZAR DENUNCIA */
-   
-    /* @media (min-width: 576px) and (max-width: 767.98px) {
-    .ouvidoria-form, input[type=submit], .border-ouvidoria, .navbar{
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
+
     .ouvidoria-form{
     justify-content: space-around;
     margin: 50px;

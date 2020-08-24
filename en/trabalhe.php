@@ -220,7 +220,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link" href="orcamento.php">Budget</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                                        <a class="nav-link" href="ouvidoria.html">Line of Ethics</a>
                                 </li>
                                 <div class="icons-nav">
                 
@@ -255,8 +255,17 @@ if(isset($_POST["submit"])){
 
 
         
-               <div class="intro-job justify-content-center">
-                <h3>SUBTITULO</h3>
+        <div class="intro-job justify-content-center" >
+                <div class="sub-title col-xm-4">        
+                        <h3 style="color:#1e227b; font-weight: bolder;">You are welcome!</h3>
+                        <br>
+                        <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;">We are always looking for professionals in the most diverse disciplines of
+                                  Engineering. </p>
+                                <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;">If you want to be part of our team,
+                                  complete the form below and attach your resume:
+                                </p>
+                </div>
+               
         </div>
 
 
@@ -271,7 +280,7 @@ if(isset($_POST["submit"])){
                                 <div class="container-contact">
                                         <div class="border-contact">
 
-                                                <h3 class="title-contact">Join Us</h3>
+                                                <h3 class="title-contact">Be part of a team of excellence</h3>
                                         </div>
 
                                 </div>
@@ -345,6 +354,31 @@ if(isset($_POST["submit"])){
 
                 </div>
 
+                <div class="sidebar">
+                                        
+                                <div class="page-contact">
+                                        
+                                        <div class="border-vaga">
+                                                
+                                                <h3 class="title-contact pb-2"> Vacancy panel</h3>        
+                                                
+                                                </div>
+                                </div>
+                        
+                                <button class="dropdown-btn mb-3 col-xm-5" id="btn-vagas" >Vacancy (Technical Instrumentation)
+                                        <p id="btn" style="font-size: 20px;">+</p>
+                                </button>
+                                
+                                <div class="dropdown-container mb-3" id="vagas">
+                                        <li> Location </li>
+                                         <li> Rol </li>
+                                         <li> Instructional degree </li>
+                                         <li> Description </li>
+                                         <li> Experience </li>
+                                </div>
+                                
+                </div>
+
         </section>
 
         <footer class="pt-4 text-center">
@@ -413,11 +447,27 @@ if(isset($_POST["submit"])){
                         <br>
 
 
-                        <a href="../es/trabalhe.php">
-
-                                <img src="../img/icon/es.png"
-                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                         <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="../trabalhe.php" class="lang">
+                                                                        
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
+                        <a href="trabalhe.php" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; filter:none ">
+                        </a>
+                        <a href="../es/trabalhe.php" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                        </a>
+                                
+                                
+                                
+                        <!--  -->
                 </div>
 
                 <div class="col-md-3 mt-md-3">
@@ -427,7 +477,7 @@ if(isset($_POST["submit"])){
                         <br>
                         <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                         <br>
-                        <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                        <h5><a class="a-footer" href="ouvidoria.html">Line of Ethics</a></h5>
                         <br>
                 </div>
                 <div class="col-lg mt-md-3 ml-3">
@@ -465,6 +515,8 @@ if(isset($_POST["submit"])){
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
                 var icon2 = document.getElementById('in1');
+                var teste = document.getElementById('btn');
+                var cont = 0;
 
                 if (mq.matches) {
                         $(logo).attr('src', '../img/icon/marca2.png');
@@ -479,6 +531,20 @@ if(isset($_POST["submit"])){
                         $(icon1).attr('src', '../img/icon/login2.png');
                         $(icon2).attr('src', '../img/icon/in2.png');
                 }
+                
+                $(document).ready(function(){
+                $("#btn-vagas").click(function(){
+                $("#vagas").slideToggle("slow");
+                if(cont == 0){
+
+                        $("#btn").html("-");
+                        cont = 1;
+                }else{
+                        $("#btn").html("+");
+                        cont = 0;
+                }
+                });
+                });
 
         </script>
 

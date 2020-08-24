@@ -117,10 +117,10 @@ if(isset($_POST["submit"])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="icon" href="img/icon/icon.png">
+    <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="icon" href="../img/icon/icon.png">
     <title>Trabaja con nosotros</title>
 </head>
 <body>
@@ -218,7 +218,7 @@ if(isset($_POST["submit"])){
                                 <a class="nav-link" href="orcamento.php">Presupuesto</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="ouvidoria.html">Auditoría</a>
+                                <a class="nav-link" href="ouvidoria.html">Linéa de Ética</a>
                         </li>
                         <div class="icons-nav">
         
@@ -251,9 +251,18 @@ if(isset($_POST["submit"])){
                                 </div>
                 </div>
 
-                <div class="intro-job justify-content-center">
-                        <h3>SUBTITULO</h3>
+        <div class="intro-job justify-content-center" >
+                <div class="sub-title col-xm-4">        
+                        <h3 style="color:#1e227b; font-weight: bolder;">¡Sea bienvenido!</h3>
+                        <br>
+                        <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;"> Siempre estamos buscando profesionales en las más diversas disciplinas de
+                                 Ingenieria. </p>
+                                <p style="color:#1e227b; font-weight: bold; font-size:18px; text-align:center;">Si quieres formar parte de nuestro equipo,
+                                 complete el formulario a continuación y adjunte su currículum:
+                                </p>
                 </div>
+               
+        </div>
 
                 <section id="contact">
 
@@ -265,7 +274,7 @@ if(isset($_POST["submit"])){
                                         <div class="container-contact">
                                                 <div class="border-contact">
                                                         
-                                                        <h3 class="title-contact">Únetenos</h3>
+                                                        <h3 class="title-contact">Sea parte de un equipo de excelencia</h3>
                                                 </div>
                                                 
                                         </div>
@@ -334,15 +343,33 @@ if(isset($_POST["submit"])){
 
 
                                         </form>
-
-
-                        <div class="container">
-                                <div class="sidebar">
-                                        <button class="dropdown-btn">
-                                                <p id="btn-drop">+</p>
-                                        </button>
                                 </div>
+                                
+                        <div class="sidebar ">
+                                        
+                                        <div class="page-contact">
+                                                
+                                                <div class="border-contact">
+                                                        
+                                                        <h3 class="title-contact pb-2"> Panel de vacantes</h3>        
+                                                        
+                                                 </div>
+                                        </div>
+                        
+                                <button class="dropdown-btn mb-3 col-xm-5" id="btn-vagas" >Vacante (Instrumentación técnica)
+                                        <p id="btn" style="font-size: 20px;">+</p>
+                                </button>
+                                
+                                <div class="dropdown-container mb-3" id="vagas">
+                                        <li>Ubicación </li>
+                                        <li> Rol </li>
+                                        <li> Grado de instrucción </li>
+                                        <li> Descripción </li>
+                                        <li> Experiencia </li>
+                                </div>
+                                
                         </div>
+                </section>
 
         <footer class="pt-4 text-center">
                 <div class="row">
@@ -410,11 +437,29 @@ if(isset($_POST["submit"])){
                                 <br>
         
         
-                                <a href="../trabalhe.php">
-        
-                                        <img src="../img/icon/br.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
+                                 <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="../trabalhe.php" class="lang">
+                                                                
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
+                        </a>
+                        <a href="../en/trabalhe.php" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px;  ">
+                        </a>
+                        <a href="trabalhe.php" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; filter:none ">
+                        </a>
+
+
+
+                                <!-- <img src="img/icon/iso.png"
+                                style="position: fixed;max-width: 105px; bottom: 20px;right: 20px; "> -->
+                        <!--  -->
                         </div>
         
                         <div class="col-md-3 mt-md-3">
@@ -424,7 +469,7 @@ if(isset($_POST["submit"])){
                                 <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
+                                <h5><a class="a-footer" href="ouvidoria.html">Linéa de Ética</a></h5>
                                 <br>
                         </div>
                         <div class="col-lg mt-md-3 ml-3">
@@ -461,6 +506,8 @@ if(isset($_POST["submit"])){
                 var logo = document.getElementById('img1');
                 var icon1 = document.getElementById('login1');
                 var icon2 = document.getElementById('in1');
+                var teste = document.getElementById('btn');
+                var cont = 0;
         
                 if (mq.matches) {
                         $(logo).attr('src', '../img/icon/marca2.png');
@@ -475,6 +522,20 @@ if(isset($_POST["submit"])){
                         $(icon1).attr('src', '../img/icon/login2.png');
                         $(icon2).attr('src', '../img/icon/in2.png');
                 }
+
+                $(document).ready(function(){
+                $("#btn-vagas").click(function(){
+                $("#vagas").slideToggle("slow");
+                if(cont == 0){
+
+                        $("#btn").html("-");
+                        cont = 1;
+                }else{
+                        $("#btn").html("+");
+                        cont = 0;
+                }
+                });
+                });
         
         </script>
         

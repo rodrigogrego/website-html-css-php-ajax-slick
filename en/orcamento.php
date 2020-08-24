@@ -202,7 +202,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                                         <a class="nav-link" href="orcamento.php">Budget</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                                        <a class="nav-link" href="ouvidoria.html">Line of Ethics</a>
                                 </li>
                                 <div class="icons-nav">
                 
@@ -283,7 +283,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                             placeholder="Service Execution Deadline*" required>
                         <br>
                     </div>
-                    <div class="ouvidoria-title d-flex flex-column pl-2">
+                    <div class="contato-title d-flex flex-column pl-2">
                         <label for="#documento">Document</label>
                         <input type="file" name="documento" id="documento" value='1' required>
                     </div>
@@ -375,11 +375,25 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <br>
 
 
-                        <a href="../es/orcamento.php">
-
-                                <img src="../img/icon/es.png"
-                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                         <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="../orcamento.php.html" class="lang">
+                                
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
+                        <a href="orcamento.php.html" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; filter:none ">
+                        </a>
+                        <a href="../es/orcamento.php" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                        </a>
+                                
+                        <!--  -->
                 </div>
 
                 <div class="col-md-3 mt-md-3">
@@ -389,7 +403,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
                         <br>
                         <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                         <br>
-                        <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                        <h5><a class="a-footer" href="ouvidoria.html">Line of Ethics</a></h5>
                         <br>
                 </div>
                 <div class="col-lg mt-md-3 ml-3">

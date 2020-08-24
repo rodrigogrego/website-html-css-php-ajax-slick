@@ -133,7 +133,7 @@ if(isset($_POST["submit"])){
                     <!-- NAVBAR AREA -->
                     <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand" href="index.html">
-                <img src="../img/icon/marca.png" height="85px" width="185px" id="img1" class="img-logo"></a>
+                <img src="../img/icon/marca.png" height="85px" width="185px" id="img1" ></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
                 aria-expanded="false" aria-label="Alterna navegação">
@@ -223,7 +223,7 @@ if(isset($_POST["submit"])){
                                 <a class="nav-link" href="orcamento.php">Presupuesto</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="ouvidoria.html">Auditoría</a>
+                                <a class="nav-link" href="ouvidoria.html">Linéa de Ética</a>
                         </li>
                         <div class="icons-nav">
         
@@ -270,7 +270,7 @@ if(isset($_POST["submit"])){
                 
                 <section id="contact">
 
-                        <div class="contato-form">
+                        <div class="contato-form orcamento-form">
                                 
                                 
                                 <div class="page-contact">
@@ -440,11 +440,29 @@ if(isset($_POST["submit"])){
                                 <br>
         
         
-                                <a href="../contato.php">
-        
-                                        <img src="../img/icon/br.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
-                                </a>
+                                 <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="../contato.php" class="lang">
+                                                                
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
+                        </a>
+                        <a href="../en/contato.php" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px;  ">
+                        </a>
+                        <a href="contato.php" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; filter:none ">
+                        </a>
+
+
+
+                                <!-- <img src="img/icon/iso.png"
+                                style="position: fixed;max-width: 105px; bottom: 20px;right: 20px; "> -->
+                        <!--  -->
                         </div>
         
                         <div class="col-md-3 mt-md-3">
@@ -454,7 +472,7 @@ if(isset($_POST["submit"])){
                                 <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
+                                <h5><a class="a-footer" href="ouvidoria.html">Linéa de Ética</a></h5>
                                 <br>
                         </div>
                         <div class="col-lg mt-md-3 ml-3">

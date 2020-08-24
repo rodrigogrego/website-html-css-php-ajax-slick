@@ -1,11 +1,16 @@
 <?php
 
-if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade_denuncia'],$_POST['descricao_denuncia'],$FILES['documento'])){                
+if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade_denuncia'],$_POST['descricao_denuncia'])){                
+        
+        $nome = $_POST['nome'];
+        $tel = $_POST['tel'];
         $dados_denuncia = $_POST['dados_denuncia']; 
         $natureza_denuncia = $_POST['natureza_denuncia']; 
         $localidade_denuncia = $_POST['localidade_denuncia']; 
         $descricao_denuncia = $_POST['descricao_denuncia'];
         $documento = $_POST['documento'];
+        $documento2 = $_POST['documento2'];
+        $documento3 = $_POST['documento3'];
         $destinatario = "jaymeoficial123@gmail.com";
         $msg = "
         <style type='text/css'>
@@ -28,6 +33,12 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                 <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
                 <tr>
                 <td>
+        <tr>
+                <td width='500'Nome opcional: $nome</td>
+                </tr>
+        <tr>
+                <td width='500'Telefone opcional: $tel</td>
+                </tr>
         <tr>
                         <td width='500'>Dados da Denúncia: $dados_denuncia</td>
                         </tr>
@@ -65,7 +76,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
 
         $enviaremail = mail($destinatario, "[Denúncia] $natureza_denuncia.", $msg, $headers);
         if($enviaremail){
-                echo("<script>alert('E-mail enviado com sucesso!')</script>");
+                echo("<script>alert('¡Email enviado con éxito!')</script>");
         } else {
                 echo("<script>alert('ERROR!!')</script>");
                 echo "";
@@ -86,7 +97,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
         <link rel="icon" href="../img/icon/icon.png">
-        <title>LM Engenharia - Auditoría</title>
+        <title>Linéa de Ética</title>
 </head>
 
 <body>
@@ -148,13 +159,18 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         </div>
 
                         <form id="ouvidoria-form" action="ouvidoria2.php" method="post">
-
-
-
+                                
                                 <div class="ouvidoria-title">
-
-
-
+                                       <input type="text" placeholder="Nombre" class="form-control form-controle" name="nome">
+                                       <br>
+                                </div>
+                                
+                                <div class="ouvidoria-title">
+                                        <input type="tel" placeholder="Teléfono" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" class="form-control form-controle" name="tel">
+                                        <br>
+                                </div>
+                               
+                                <div class="ouvidoria-title">
 
                                         <select name="dados_denuncia" class="form-control form-controle" id="input-1" required>
                                                 <option value="">Datos de informes *</option>
@@ -215,7 +231,17 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                                 </div>
 
                                 <div class="ouvidoria-title">
-                                        <input type="file" name="documento" value='1' class="form-controle file" required>
+                                        <input type="file" name="documento" value='1' class="form-controle file" >
+
+                                </div>
+
+                                <div class="ouvidoria-title">
+                                        <input type="file" name="documento2" value='2' class="form-controle file" >
+
+                                </div>
+
+                                <div class="ouvidoria-title">
+                                        <input type="file" name="documento3" value='3' class="form-controle file" >
 
                                 </div>
 
@@ -300,11 +326,29 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         <br>
 
 
-                        <a href="../ouvidoria2.php">
-
+                        <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                        <a href="../ouvidoria2.php" class="lang">
+                                                                
                                 <img src="../img/icon/br.png"
-                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
+                        <a href="../en/ouvidoria2.php" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px;  ">
+                        </a>
+                        <a href="ouvidoria2.php" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; filter:none ">
+                        </a>
+
+
+
+                                <!-- <img src="img/icon/iso.png"
+                                style="position: fixed;max-width: 105px; bottom: 20px;right: 20px; "> -->
+                        <!--  -->
                 </div>
 
                 <div class="col-md-3 mt-md-3">
@@ -314,7 +358,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         <br>
                         <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                         <br>
-                        <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
+                        <h5><a class="a-footer" href="ouvidoria.html">Linéa de Ética</a></h5>
                         <br>
                 </div>
                 <div class="col-lg mt-md-3 ml-3">

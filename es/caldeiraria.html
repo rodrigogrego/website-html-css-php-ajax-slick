@@ -104,7 +104,7 @@
                                 <a class="nav-link" href="orcamento.php">Presupuesto</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="ouvidoria.html">Auditoría</a>
+                                <a class="nav-link" href="ouvidoria.html">Linéa de Ética</a>
                         </li>
                         <div class="icons-nav">
         
@@ -177,25 +177,69 @@
                 <div class="row-main">
  
                  <div class="col-md-10 centro mt-5 mb-4">
-                    <div  data-interval="2000" id="mycarousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                    <li data-target="mycaroysel" data-slide-to="0" class="active"></li>
-                                    <li data-target="mycaroysel" data-slide-to="1"></li>
-                                    <li data-target="mycaroysel" data-slide-to="2"></li>
-                            </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="../img/serv/caldeiraria.JPG" alt="Primeiro Slide">
+                        <div data-interval="2000" id="service-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                        <li data-target="service-carousel" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="service-carousel" data-slide-to="1" >
+                                    </li>
+                                    <li data-target="service-carousel" data-slide-to="2" >
+                                </li>
+                                </ol>
+                            <div class="carousel-inner c-portfolio">
+                              <div class="carousel-item active" >
+                                <img id="myImg" onclick="openModal();currentSlide(1)" class="d-block w-100 " src="../img/serv/caldeiraria.JPG" alt="Primeiro Slide">
+                              </div>
+                              <div class="carousel-item" >
+                                <img id="myImg" onclick="openModal();currentSlide(2)" class="d-block w-100" src="../img/serv/caldeiraria2.JPG" alt="Segundo Slide">
+                              </div>
+                              <div class="carousel-item" >
+                                <img id="myImg" onclick="openModal();currentSlide(3)" class="d-block w-100" src="../img/serv/caldeiraria3.JPG" alt="Terceiro Slide">
+                              </div>
+                              
+                            </div>
                           </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="../img/serv/caldeiraria2.JPG" alt="Segundo Slide">
+                </div>
+
+
+                      <!-- MODAL -->
+            
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides c-portfolio">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="../img/serv/caldeiraria.JPG" style="width:100%">
                           </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="../img/serv/caldeiraria3.JPG" alt="Terceiro Slide">
+                      
+                          <div class="mySlides c-portfolio">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="../img/serv/caldeiraria2.JPG" style="width:100%">
                           </div>
+
+                          <div class="mySlides c-portfolio">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="../img/serv/caldeiraria3.JPG" style="width:100%">
+                          </div>
+                      
+                       
+                          
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                      
+                      
                         </div>
                       </div>
-                </div>
+
+
+
+                <!--  -->
+
                 <div class="col-md-10 mt-5 centro cad">
                     <div class="text-main">
                      
@@ -204,47 +248,53 @@
                        
                                 <h3 class="title-main ">Mantenimiento</h3>
                                 <br>    
-                                                <li>
-                                                        
-                                                        Tanques y esferas;
-                                                </li>
-                                <br>
-                                                <li>
-                                                        Tubería;
-                                                </li> 
-                                <br>
-                                                <li>
-                                                        Estructuras;
-                                                </li>
-                                <br>
-                                                <li>
-                                                        Válvula de extracción e instalación;
-                                                </li>
-                                <br>
-                                                <li>
-                                                        Reemplazo de placa de orificio y figuras.
-                                                </li>
+                                <ul class="list-portfolio">
+
+                                        <li class="item-list">
+                                                
+                                        Tanques y esferas;
+                                        </li>
+                                 <br>
+                                        <li class="item-list">
+                                                Tubería;
+                                        </li> 
+                                        <br>
+                                        <li class="item-list">
+                                                Estructuras;
+                                        </li>
+                                        <br>
+                                        <li class="item-list">
+                                                Válvula de extracción e instalación;
+                                        </li>
+                                        <br>
+                                        <li class="item-list">
+                                                Reemplazo de placa de orificio y figuras.
+                                        </li>
+                                </ul>
 
 
                                                 <br>
                         <h3 class="title-main mt-5">Prefabricación y montaje de tuberías.</h3>
                         <br>
-                                <li>
-                                                                
+                        <ul class="list-portfolio">
+
+                                <li class="item-list">
+                                        
                                         Tubos y calderas;
                                 </li>
                         <br>
-                                <li>
+                        <li class="item-list">
                                         Acero carbono;
                                 </li> 
-                        <br>
-                                <li>
+                                <br>
+                                <li class="item-list">
                                         Acero inoxidable;
                                 </li>
-                        <br>
-                                <li>
+                                <br>
+                                <li class="item-list">
                                         Aleación de acero.
                                 </li>
+                        </ul>
                       
                        
                                      
@@ -323,11 +373,30 @@
                                 <br>
         
         
-                                <a href="../caldeiraria.html">
-        
+                                <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                                <a href="../caldeiraria.html" class="lang">
+                                                                        
                                         <img src="../img/icon/br.png"
-                                                style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                                        style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                                 </a>
+                                <a href="../en/caldeiraria.html" class="lang">
+                                        
+                                        <img src="../img/icon/uk.png"
+                                        style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px;  ">
+                                </a>
+                                <a href="caldeiraria.html" class="lang">
+                                        
+                                        <img src="../img/icon/es.png"
+                                        style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; filter:none ">
+                                </a>
+
+
+
+                                        <!-- <img src="img/icon/iso.png"
+                                        style="position: fixed;max-width: 105px; bottom: 20px;right: 20px; "> -->
+                        <!--  -->
+
                         </div>
         
                         <div class="col-md-3 mt-md-3">
@@ -337,7 +406,7 @@
                                 <br>
                                 <h5><a class="a-footer" href="trabalhe.php">Trabaja con nosotros</a></h5>
                                 <br>
-                                <h5><a class="a-footer" href="ouvidoria.html">Auditoría</a></h5>
+                                <h5><a class="a-footer" href="ouvidoria.html">Linéa de Ética</a></h5>
                                 <br>
                         </div>
                         <div class="col-lg mt-md-3 ml-3">
@@ -508,6 +577,45 @@
           }
         }
         </script>
+
+<script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

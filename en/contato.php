@@ -233,7 +233,7 @@ if(isset($_POST["submit"])){
                                         <a class="nav-link" href="orcamento.php">Budget</a>
                                 </li>
                                 <li class="nav-item">
-                                        <a class="nav-link" href="ouvidoria.html">Ombudsman</a>
+                                        <a class="nav-link" href="ouvidoria.html">Line of Ethics</a>
                                 </li>
                                 <div class="icons-nav">
 
@@ -446,11 +446,27 @@ if(isset($_POST["submit"])){
                         <br>
 
 
-                        <a href="../es/contato.php">
-
-                                <img src="../img/icon/es.png"
-                                        style="position: fixed;max-width: 45px;bottom: 20px;left: 20px;">
+                         <!-- BANDEIRAS E CERTIFICADO ISO -->
+                        
+                         <a href="../contato.php.html" class="lang">
+                                                                        
+                                <img src="../img/icon/br.png"
+                                style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
+                        <a href="contato.php.html" class="lang">
+                                
+                                <img src="../img/icon/uk.png"
+                                style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; filter:none ">
+                        </a>
+                        <a href="../es/contato.php.html" class="lang">
+                                
+                                <img src="../img/icon/es.png"
+                                style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
+                        </a>
+
+                                
+                                
+                        <!--  -->
                 </div>
 
                 <div class="col-md-3 mt-md-3">
@@ -460,7 +476,7 @@ if(isset($_POST["submit"])){
                         <br>
                         <h5><a class="a-footer" href="trabalhe.php">Work with us</a></h5>
                         <br>
-                        <h5><a class="a-footer" href="ouvidoria.html">Ombudsman</a></h5>
+                        <h5><a class="a-footer" href="ouvidoria.html">Line of Ethics</a></h5>
                         <br>
                 </div>
                 <div class="col-lg mt-md-3 ml-3">
