@@ -176,6 +176,63 @@ a.sub-itens:hover{
 /* HOME START */
 
 
+
+#area{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    background: #c8d0d8;
+}
+
+#area .video-base #video-altura video{
+    max-width: inherit;
+    margin: auto;
+    z-index: -1;
+    left: 0;
+    bottom: 41px;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: 50vh;
+}
+
+#area .video-base #video-altura::after {
+    content: "";
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 80%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#area .video-base #video-portfolio video{
+    max-width: inherit;
+    margin: auto;
+    z-index: -1;
+    left: 0;
+    bottom: 41px;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    
+    background-size: 50vh;
+}
+
+#area .video-base #video-portfolio::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
 #area-index{
     overflow: hidden;
     display: block;
@@ -576,9 +633,10 @@ main{
         padding-top: 110px;
     }
     .title-page .page-title{
-        margin-bottom: -5px;
         position: relative;
         font-variant: all-petite-caps;
+        margin: 10px;
+        font-size:18px;
 
     }
 
@@ -601,16 +659,6 @@ main{
     #in1 src{
         src: url(/img/in2.png);
     }
-    .name-func{
-        min-width: 58px !important;
-        top: 100% !important;
-        left: -50% !important;
-    }
-    .name-func2{
-        min-width: 58px !important;
-        top: -100% !important;
-        left: -50% !important;   
-    }
     .text-main{
         padding-left: 1px !important;
 
@@ -622,14 +670,14 @@ main{
     .title-main{
         min-inline-size: inherit !important;
     }
-    .carousel-control-next{
-        margin-right: -25px !important;
-    }
-    .carousel-control-prev{
-        margin-left: -25px !important;
+    .prev,
+    .next {
+        margin-top:1px !important;
+      
     }
     .title-portfolio .page-portfolio{
         position: relative;
+        font-size: 18px;
         margin-bottom: -10px;
     }
     .img-clients{
@@ -1215,6 +1263,7 @@ main{
 
 .connect.for{
     margin-top: -26px;
+    margin-left: -2px;
     border-bottom: none !important;
     border-left: none !important;
     height: 59px;

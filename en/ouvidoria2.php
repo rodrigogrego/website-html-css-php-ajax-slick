@@ -95,7 +95,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-        <link rel="icon" href="../img/icon/icon.png">
+        <link rel="icon" href="../img/icon/icon.webp">
         <title>Line of Ethics</title>
 </head>
 
@@ -114,7 +114,7 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                                 
                                 
                                 <a href="index.html" class="img-ouvi">
-                                        <img src="../img/icon/marca2.png"></a>
+                                        <img src="../img/icon/marca2.webp"></a>
                                         
                                         
                                         
@@ -336,17 +336,17 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                         
                         <a href="../ouvidoria2.php" class="lang">
                                                                         
-                                <img src="../img/icon/br.png"
+                                <img src="../img/icon/br.webp"
                                 style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; " >
                         </a>
                         <a href="ouvidoria2.php" class="lang">
                                 
-                                <img src="../img/icon/uk.png"
+                                <img src="../img/icon/uk.webp"
                                 style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; filter:none ">
                         </a>
                         <a href="../es/ouvidoria2.php" class="lang">
                                 
-                                <img src="../img/icon/es.png"
+                                <img src="../img/icon/es.webp"
                                 style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
                         </a>
 
@@ -390,9 +390,8 @@ if(isset($_POST['dados_denuncia'],$_POST['natureza_denuncia'],$_POST['localidade
                 </a>
         </div>
 
-        <!-- BOOTSTRAP JS FILE -->
-        <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+
+     
 
 </body>
 

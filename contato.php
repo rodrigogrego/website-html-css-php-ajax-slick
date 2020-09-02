@@ -130,8 +130,9 @@ if(isset($_POST["submit"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/script.js" async></script>
     <link rel="stylesheet" href="css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="icon" href="img/icon/icon.png">
+    <link rel="icon" href="img/icon/icon.webp">
     <title>Contato</title>
 </head>
 <body>
@@ -243,7 +244,7 @@ if(isset($_POST["submit"])){
                                         </li>
 
                                         <li class="nav-item">
-                                                <a class="nav-link" href="login.php">
+                                                <a class="nav-link" href="../DB_LmEngenharia/LoginDash.php">
                                                         <img src="img/icon/login2.png" height="25px" width="25px"id='login1'>
                                                 </a>
                                         </li>
@@ -274,42 +275,6 @@ if(isset($_POST["submit"])){
         
         <section id="contact2">
 
-                                
-                                <!-- <div class="row-other">
-                                        <div class="contact-phone mt-5">
-
-                                               
-
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        <img src="img/icon/call.png" class="img-fluid icon" alt="">
-                                                </div>
-                                                
-                                                
-                                                <div class="col-sm-auto element">
-                                                        
-                                                        
-                                                        <h3 class="title-contact" >Telefone</h3>
-                                                        <p>+55 71 0000-0000</p>
-                                                </div>
-        
-                
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                <img src="img/icon/email.png" class="img-fluid icon" alt="">
-                                                        </div>
-                                                        <div class="col-sm-auto element">
-                                                                
-                                                                
-                                                                <h3 class="title-contact">E-mail</h3>
-                                                                <p>rodrigo@gmail.com</p>
-                                                        </div>
-                                                                
-                                                                
-                                                                
-                                                        </div>
-
-                                                </div> -->
 
                 
                 <section id="contact">
@@ -487,17 +452,17 @@ if(isset($_POST["submit"])){
                         
                         <a href="contato.php" class="lang">
                                                 
-                                                <img src="img/icon/br.png"
+                                                <img src="img/icon/br.webp"
                                                 style="position: fixed;max-width: 33px;bottom: 20px;left: 20px; filter:none" >
                                         </a>
                                         <a href="en/contato.php" class="lang">
                                                 
-                                                <img src="img/icon/uk.png"
+                                                <img src="img/icon/uk.webp"
                                                 style="position: fixed;max-width: 33px;height: 21px;bottom: 20px;left: 68px; ">
                                         </a>
                                         <a href="es/contato.php" class="lang">
                                                 
-                                                <img src="img/icon/es.png"
+                                                <img src="img/icon/es.webp"
                                                 style="position: fixed;max-width: 33px;height: 21px; bottom: 20px;left: 116px; ">
                                         </a>
                 
@@ -543,154 +508,8 @@ if(isset($_POST["submit"])){
                 </a>
         </div>
 
-        <!-- BOOTSTRAP JS FILE -->
-        <!-- SCRIPT JQUERY PARA TROCAR DE COR NAVBAR  -->
-
-        <script>
-
-                var mq = window.matchMedia('(max-width: 780px)');
-                var logo = document.getElementById('img1');
-                var icon1 = document.getElementById('login1');
-                var icon2 = document.getElementById('in1');
-
-                if (mq.matches) {
-                        $(logo).attr('src', 'img/icon/marca2.png');
-                        $('.navbar-expand-lg').css("background-color", "#ffff");
-
-                        $(icon1).attr('src', 'img/icon/login.png');
-                        $(icon2).attr('src', 'img/icon/in.png');
-                }
-                else {
-                        $(logo).attr('src', 'img/icon/marca.png');
-                        $('.navbar-expand-lg').css("background-color", "transparent");
-                        $(icon1).attr('src', 'img/icon/login2.png');
-                        $(icon2).attr('src', 'img/icon/in2.png');
-                }
-
-        </script>
-
-        <script>
-                var mq = window.matchMedia('(max-width: 780px)');
-                $(window).scroll(function () {
-
-                        if (mq.matches) {
-                                $('.navbar-expand-lg').css("background-color", "#ffff");
-                        }
-
-                        else if ($(this).scrollTop() > 1) {
-                                $('.navbar-expand-lg').css("background-color", "#ffff");
-                                $('.navbar').css("padding", "0rem 1rem 0rem 1rem");
-                               
-
-
-                        } else {
-                                $('.navbar-expand-lg').css("background-color", "transparent");
-                                $('.navbar').css("padding", ".5rem 1rem .5rem 1rem");
-
-
-                        }
-                });
-        </script>
-        <!-- SCRIPT JQUERY PARA TROCAR DE IMAGEM  -->
-        <script>
-                var mq = window.matchMedia('(max-width: 780px)');
-                var troca = document.getElementById('img1');
-                $(window).scroll(function () {
-
-                        if (mq.matches) {
-                                $(troca).attr('src', 'img/icon/marca2.png')
-                        }
-
-                        else if ($(document).scrollTop() > 1) {
-                                $(troca).attr('src', 'img/icon/marca2.png');
-                        } else {
-                                $(troca).attr('src', 'img/icon/marca.png');
-                        }
-
-                });
-        </script>
-
-        <script>
-                var mq = window.matchMedia('(max-width: 780px)');
-                var troca3 = document.getElementById('login1');
-                $(window).scroll(function () {
-                        if (mq.matches) {
-                                $(troca3).attr('src', 'img/icon/login.png');
-                        }
-                        else if ($(document).scrollTop() > 1) {
-                                $(troca3).attr('src', 'img/icon/login.png');
-                        } else {
-                                $(troca3).attr('src', 'img/icon/login2.png');
-                        }
-                });
-        </script>
-
-        <script>
-                var mq = window.matchMedia('(max-width: 780px)');
-                var troca4 = document.getElementById('in1');
-                $(window).scroll(function () {
-
-                        if (mq.matches) {
-                                $(troca4).attr('src', 'img/icon/in.png');
-                        }
-
-                        else if ($(document).scrollTop() > 1) {
-                                $(troca4).attr('src', 'img/icon/in.png');
-                        } else {
-                                $(troca4).attr('src', 'img/icon/in2.png');
-                        }
-                });
-        </script>
-
-        <script>
-
-
-                $(window).scroll(function () {
-
-                        if ($(this).scrollTop() > 1) {
-                                $('.nav-item .nav-link').css("color", "#1e227b");
-
-                        } else {
-                                $('.nav-item .nav-link').css("color", "#ffffff");
-
-                        }
-                });
-        </script>
-
-        <script>
-
-        function funcaoClick() {
-        var mq = window.matchMedia('(max-width: 780px)');
-        var x = document.getElementById("drop");
-          if(mq.matches && x.className.indexOf("show") == -1){
- 
-                          x.className += "show";
-                }
-           else {
-            x.className = x.className.replace("show", "");
-       
-          }
-        }
-        </script>
-
-        <script>
-        function funcaoClick2() {
-        var mq = window.matchMedia('(max-width: 780px)');
-        var y = document.getElementById("drop2")
-          if(mq.matches && y.className.indexOf("show2") == -1){
-                 
-                y.className += "show2";
-                }
-           else {
-            y.className = y.className.replace("show2", "");
-          }
-        }
-        </script>
-
-
-
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-            <script src="css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+           
 
 </body>
 </html>
