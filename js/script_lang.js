@@ -44,7 +44,7 @@ $(document).ready(function(){
         var icon2 = document.getElementById('in1');
 
         if (mq.matches) {
-                $(logo).attr('src', '../img/icon/marca2.png');
+                $(logo).attr('src', '../img/icon/marca2.webp');
                 $('.navbar-expand-lg').css("background-color", "#ffff");
 
                 $(icon1).attr('src', '../img/icon/login.png');

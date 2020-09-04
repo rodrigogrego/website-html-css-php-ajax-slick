@@ -439,6 +439,7 @@ if(isset($_POST['nome'],$_POST['telefone'],$_POST['email'],$_POST['servico_desej
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../css/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
       
 
 </body>
